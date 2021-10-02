@@ -7,6 +7,7 @@ C:\MascotaFeliz\MascotaFeliz.App\MascotaFeliz.App.Dominio\obj\Debug\netstandard2
 C:\MascotaFeliz\MascotaFeliz.App\MascotaFeliz.App.Dominio\obj\Debug\netstandard2.1\MascotaFeliz.App.Dominio.csproj.CoreCompileInputs.cache
 C:\MascotaFeliz\MascotaFeliz.App\MascotaFeliz.App.Dominio\obj\Debug\netstandard2.1\MascotaFeliz.App.Dominio.dll
 C:\MascotaFeliz\MascotaFeliz.App\MascotaFeliz.App.Dominio\obj\Debug\netstandard2.1\MascotaFeliz.App.Dominio.pdb
+<<<<<<< HEAD
 C:\MascotaFeliz V1\MascotaFeliz\MascotaFeliz.App.Dominio\bin\Debug\netstandard2.1\MascotaFeliz.App.Dominio.deps.json
 C:\MascotaFeliz V1\MascotaFeliz\MascotaFeliz.App.Dominio\bin\Debug\netstandard2.1\MascotaFeliz.App.Dominio.dll
 C:\MascotaFeliz V1\MascotaFeliz\MascotaFeliz.App.Dominio\bin\Debug\netstandard2.1\MascotaFeliz.App.Dominio.pdb
@@ -16,3 +17,14 @@ C:\MascotaFeliz V1\MascotaFeliz\MascotaFeliz.App.Dominio\obj\Debug\netstandard2.
 C:\MascotaFeliz V1\MascotaFeliz\MascotaFeliz.App.Dominio\obj\Debug\netstandard2.1\MascotaFeliz.App.Dominio.csproj.CoreCompileInputs.cache
 C:\MascotaFeliz V1\MascotaFeliz\MascotaFeliz.App.Dominio\obj\Debug\netstandard2.1\MascotaFeliz.App.Dominio.dll
 C:\MascotaFeliz V1\MascotaFeliz\MascotaFeliz.App.Dominio\obj\Debug\netstandard2.1\MascotaFeliz.App.Dominio.pdb
+=======
+C:\MascotaFelizV1\MascotaFeliz\MascotaFeliz.App.Dominio\bin\Debug\netstandard2.1\MascotaFeliz.App.Dominio.deps.json
+C:\MascotaFelizV1\MascotaFeliz\MascotaFeliz.App.Dominio\bin\Debug\netstandard2.1\MascotaFeliz.App.Dominio.dll
+C:\MascotaFelizV1\MascotaFeliz\MascotaFeliz.App.Dominio\bin\Debug\netstandard2.1\MascotaFeliz.App.Dominio.pdb
+C:\MascotaFelizV1\MascotaFeliz\MascotaFeliz.App.Dominio\obj\Debug\netstandard2.1\MascotaFeliz.App.Dominio.csprojAssemblyReference.cache
+C:\MascotaFelizV1\MascotaFeliz\MascotaFeliz.App.Dominio\obj\Debug\netstandard2.1\MascotaFeliz.App.Dominio.AssemblyInfoInputs.cache
+C:\MascotaFelizV1\MascotaFeliz\MascotaFeliz.App.Dominio\obj\Debug\netstandard2.1\MascotaFeliz.App.Dominio.AssemblyInfo.cs
+C:\MascotaFelizV1\MascotaFeliz\MascotaFeliz.App.Dominio\obj\Debug\netstandard2.1\MascotaFeliz.App.Dominio.csproj.CoreCompileInputs.cache
+C:\MascotaFelizV1\MascotaFeliz\MascotaFeliz.App.Dominio\obj\Debug\netstandard2.1\MascotaFeliz.App.Dominio.dll
+C:\MascotaFelizV1\MascotaFeliz\MascotaFeliz.App.Dominio\obj\Debug\netstandard2.1\MascotaFeliz.App.Dominio.pdb
+>>>>>>> 81d68861ba95b3e54f5abd9d50c75ae55d8cf671
