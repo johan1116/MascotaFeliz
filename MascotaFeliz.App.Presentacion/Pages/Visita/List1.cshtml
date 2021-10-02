@@ -1,0 +1,45 @@
+﻿@page
+@model MascotaFeliz.App.Presentacion.Pages.List1Model
+@{
+}
+<h1>Formulario Visita Domiciliaria</h1>
+<table class="table">
+    @foreach (var Visita in Model.VisitaDomiciliaria)
+    {
+        <tr>
+            <td>
+                @Visita.Id
+            </td>
+
+             <td>
+                @Visita.FechaHora
+            </td>
+
+             <td>
+                @Visita.Temperatura
+            </td>
+
+             <td>
+                @Visita.Peso
+            </td>
+
+             <td>
+                @Visita.FRespiratoria
+            </td>
+
+             <td>
+                @Visita.FCardiaca
+            </td>
+
+             <td>
+                @Visita.EstadoAnimo
+            </td>
+
+             <td>
+                @Visita.Recomendacion
+            </td>
+          
+        </tr>
+    }
+
+</table>

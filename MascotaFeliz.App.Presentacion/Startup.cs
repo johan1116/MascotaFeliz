@@ -26,6 +26,9 @@ namespace MascotaFeliz.App.Presentacion
         {
             services.AddRazorPages();
             services.AddSingleton<IRepositorioPropietarios,RepositorioPropietarios>();
+            services.AddSingleton<IRepositorioVisitas,RepositorioVisitas>();
+            
+            
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
