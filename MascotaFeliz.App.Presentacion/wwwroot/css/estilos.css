@@ -1,0 +1,324 @@
+:root {
+    --colorTextos: #49454567;
+}
+
+
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto';
+    background: #43cea2;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #185a9d, #43cea2);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #185a9d, #43cea2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    height: 1400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fondo{
+    margin: auto;
+}
+
+
+.Encabezado img,
+.Encabezado .logo{
+    /*display:inline;*/
+   display:block;
+    margin-left: auto;
+    margin-right: auto;
+}
+    
+
+
+
+
+.fondo img{
+    /* width:px;
+    height:23px;*/
+    width:120px; /* you can use % */ height: auto; 
+    
+}  
+
+.logo{
+    text-align: center;
+    font-size: 1.2cm;
+    color: #fff;
+}
+
+.logo span{
+    color:rgb(35, 20, 241)
+}
+
+h1{
+    text-align: center;
+    font-weight: 700;
+}
+
+.contenido{
+    display:grid;
+    grid-template-columns: 2fr .8fr;
+}
+
+form{
+    background: #fff;
+    padding: 40px 0;
+    box-shadow: 0 0 6px 0 rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+}
+
+.form1{
+    background: #fff;
+    padding: 40px 20px;
+    box-shadow: 0 0 6px 0 rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+}
+
+.form{
+    width: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.form2{
+    width: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+}
+
+
+.form .bloque{grid-column: 1 / 4;}
+.form .bloque1{grid-column: 1 / 4;
+    position: center;
+    margin: 45px ;
+    
+}
+
+.form2 .bloque2{
+
+    grid-column: 1 / 3;
+    position: center;
+    margin: 45px ;
+
+}
+
+.form2 .bloque3{
+
+    grid-column: 1 / 3;
+}
+
+
+form .grupo{
+    position: relative;
+    margin: 45px ;
+}
+
+input{
+    background: none;
+    color: #c6c6c6;
+    font-size: 18px;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid var(--colorTextos);
+}
+
+textarea {
+    font-family: 'Roboto';
+    background: none;
+    color: #c6c6c6;
+    font-size: 18px;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    width: 100%;
+    border: none;
+    border: 1px solid var(--colorTextos);
+
+}
+select{
+    font-family: 'Roboto';
+    background: none;
+    color: #c6c6c6;
+    font-size: 15px;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid var(--colorTextos);
+}
+
+input:focus{ 
+    outline: none;
+    color: #5e5d5d;
+}
+
+label{
+    color: var(--colorTextos);
+    font-size: 16px;
+    position: absolute;
+    left: 5px;
+    top: 10px;
+    transition: 0.5s ease all;
+    pointer-events: none;
+}
+
+input:focus~label,
+input:valid~label{
+    top: -14px;
+    font-size: 12px;
+    color: #2196f3;
+}
+
+.barra{
+    position: relative;
+    display: block;
+    width: 100%;
+}
+
+.barra::before{
+    content: "";
+    height: 2px;
+    width: 0%;
+    bottom: 0;
+    position: absolute;
+    background: linear-gradient(to right, #185a9d, #43cea2);
+    transition: 0.3s ease width;
+    left: 0;
+}
+
+input:focus~.barra::before{
+    width: 100%;
+}
+
+
+button{
+    font-family: 'roboto';
+    background: #43cea2;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #185a9d, #43cea2);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #185a9d, #43cea2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    border: none;
+    display: block;
+    width: 80%;
+    margin: 10px auto;
+    color: #fff;
+    height: 40px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.form button:hover,
+.form button:focus{
+    background: #43cea2;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #185a9d, #43cea2);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #185a9d, #43cea2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color:#fff;
+    outline:0;
+}
+
+.info{
+    font-family: 'Roboto';
+    color: rgba(255, 255, 255, 0.8);
+    background: rgb(36, 186, 206);
+    padding: 20px 20px;
+    box-shadow: 0 0 6px 0 rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+}
+
+.info h4,
+.info ul,
+.info p,
+.info .Yotta,
+.info img{
+    text-align: center;
+    margin: 0 0 1rem 0;
+}
+
+.info h4{
+    font-size: 19px;
+}
+
+.info ul{
+    list-style: none;
+    text-align: left;
+    padding: 0;
+}
+
+.info ul li{
+    padding: .3em;
+}
+
+.info .Yotta{
+    font-size: 13px;
+}
+
+.info img{
+  /* width:px;
+  height:23px;*/
+  display:block;
+  margin-left: auto;
+  margin-right: auto;
+   width:100px; /* you can use % */ height: auto; 
+  
+} 
+
+
+.info1{
+    font-family: 'Roboto';
+    color: rgba(255, 255, 255, 0.8);
+    background: rgb(36, 186, 206);
+    padding: 20px 20px;
+    box-shadow: 0 0 6px 0 rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+}
+
+.info1 h4,
+.info1 ul,
+.info1 p,
+.info1 .Yotta{
+    text-align: center;
+    margin: 3rem 0 3rem 0;
+}
+
+.info1 h4{
+    font-size: 19px;
+}
+
+.info1 ul{
+    list-style: none;
+    text-align: left;
+    padding: 0;
+}
+
+.info1 ul li{
+    padding: .3em;
+}
+
+.info1 .Yotta{
+    font-size: 13px;
+}
+
+.info1 img{
+    /* width:px;
+    height:23px;*/
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+     width:100px; /* you can use % */ height: auto; 
+    
+} 
+
+@media screen and (max-width:500px){
+    form{
+        width: 80%;
+    }
+}
+

@@ -4,8 +4,18 @@
 }
 <h1>Formulario Propietario de Mascotas</h1>
 <table class="table">
+    <thead>
+        <tr>
+            <td>Documento de Identidad</td>
+            <td>Nombre</td>
+            <td>Apellidos</td>
+            <td>Telefono</td>
+            <td>Direccion</td>
+        </tr>
+    </thead>
     @foreach (var Propietario in Model.PropietarioMascotas)
     {
+
         <tr>
             <td>
                 @Propietario.Id
