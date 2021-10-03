@@ -17,9 +17,7 @@ namespace MascotaFeliz.App.Persistencia
             {
                 optionsBuilder
                 .UseSqlServer("Data Source = (localdb)\\MSSQLLocalDB; Initial Catalog =MascotaFeliztData");
-                /*REPOSITORIO GENERADOsss*/
-                /*REPOSITORIO GENERADO No 2*/
-                /* cambio 1 */ 
+                
                 
             }
         }
