@@ -249,3 +249,5 @@ C:\MascotaFelizV1\MascotaFeliz\MascotaFeliz.App.Presentacion\obj\Debug\netcoreap
 C:\MascotaFelizV1\MascotaFeliz\MascotaFeliz.App.Presentacion\obj\Debug\netcoreapp3.1\MascotaFeliz.App.Presentacion.genruntimeconfig.cache
 >>>>>>> 81d68861ba95b3e54f5abd9d50c75ae55d8cf671
 C:\MascotaFeliz\MascotaFeliz.App\MascotaFeliz.App.Presentacion\obj\Debug\netcoreapp3.1\Razor\Pages\Visita\List1.cshtml.g.cs
+C:\MascotaFeliz V1\MascotaFeliz\MascotaFeliz.App.Presentacion\obj\Debug\netcoreapp3.1\Razor\Pages\FormularioPropietario\Formulario2.cshtml.g.cs
+C:\MascotaFeliz V1\MascotaFeliz\MascotaFeliz.App.Presentacion\obj\Debug\netcoreapp3.1\Razor\Pages\FormularioVisita\Formulario1.cshtml.g.cs
