@@ -4,6 +4,33 @@
 }
 <h1>Formulario Visita Domiciliaria</h1>
 <table class="table">
+
+    <colgroup>
+        <col style="background-color: rgba(14, 221, 248, 0.397);">
+        <col style="background-color: rgba(120, 250, 178, 0.452);">
+        <col style="background-color: rgba(14, 221, 248, 0.397);">
+        <col style="background-color: rgba(120, 250, 178, 0.452);">
+        <col style="background-color: rgba(14, 221, 248, 0.397);">
+        <col style="background-color: rgba(120, 250, 178, 0.452);">
+        <col style="background-color: rgba(14, 221, 248, 0.397);">
+        <col style="background-color: rgba(120, 250, 178, 0.452);">
+
+    </colgroup>
+
+    <caption><b>Listado Visita Domiciliaria</b></caption>
+
+    <thead>
+        <tr>
+            <td>Id Profesional del Veterinario</td>
+            <td>Fecha de la Visita Domiciliaria</td>
+            <td>Temperatura (°C)</td>
+            <td>Masa Corporal (Kg)</td>
+            <td>Frecuencia Respiratoria (rpm)</td>
+            <td>Frecuencia Cardiaca (lat/min)</td>
+            <td>Estado de Ánimo </td>
+            <td>Recomendaciones</td>
+        </tr>
+    </thead>
     @foreach (var Visita in Model.VisitaDomiciliaria)
     {
         <tr>
@@ -11,34 +38,34 @@
                 @Visita.Id
             </td>
 
-             <td>
+            <td>
                 @Visita.FechaHora
             </td>
 
-             <td>
+            <td>
                 @Visita.Temperatura
             </td>
 
-             <td>
+            <td>
                 @Visita.Peso
             </td>
 
-             <td>
+            <td>
                 @Visita.FRespiratoria
             </td>
 
-             <td>
+            <td>
                 @Visita.FCardiaca
             </td>
 
-             <td>
+            <td>
                 @Visita.EstadoAnimo
             </td>
 
-             <td>
+            <td>
                 @Visita.Recomendacion
             </td>
-          
+
         </tr>
     }
 
