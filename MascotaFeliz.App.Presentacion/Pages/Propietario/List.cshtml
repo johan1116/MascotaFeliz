@@ -4,13 +4,25 @@
 }
 <h1>Formulario Propietario de Mascotas</h1>
 <table class="table">
+
+    <colgroup>
+        <col style="background-color: rgba(14, 221, 248, 0.397);">
+        <col style="background-color: rgba(120, 250, 178, 0.452);">
+        <col style="background-color: rgba(14, 221, 248, 0.397);">
+        <col style="background-color: rgba(120, 250, 178, 0.452);">
+        <col style="background-color: rgba(14, 221, 248, 0.397);">
+
+
+    </colgroup>
+
+    <caption><b>Listado Propietarios de Mascotas</b></caption>
     <thead>
         <tr>
             <td>Documento de Identidad</td>
             <td>Nombre</td>
             <td>Apellidos</td>
-            <td>Telefono</td>
-            <td>Direccion</td>
+            <td>Teléfono</td>
+            <td>Dirección</td>
         </tr>
     </thead>
     @foreach (var Propietario in Model.PropietarioMascotas)
