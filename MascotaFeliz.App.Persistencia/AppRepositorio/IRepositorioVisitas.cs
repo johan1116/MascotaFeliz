@@ -7,5 +7,7 @@ namespace MascotaFeliz.App.Persistencia.AppRepositorios
     public interface IRepositorioVisitas
     {
         IEnumerable<VisitaDomiciliaria> GetAll();
+
+        VisitaDomiciliaria GetVisitadomiciliariaPorId(int visitadomiciliariaID);
     }
 }

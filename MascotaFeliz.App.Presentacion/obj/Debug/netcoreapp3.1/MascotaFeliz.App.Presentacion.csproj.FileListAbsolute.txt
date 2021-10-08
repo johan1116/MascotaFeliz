@@ -251,3 +251,8 @@ C:\MascotaFelizV1\MascotaFeliz\MascotaFeliz.App.Presentacion\obj\Debug\netcoreap
 C:\MascotaFeliz\MascotaFeliz.App\MascotaFeliz.App.Presentacion\obj\Debug\netcoreapp3.1\Razor\Pages\Visita\List1.cshtml.g.cs
 C:\MascotaFeliz V1\MascotaFeliz\MascotaFeliz.App.Presentacion\obj\Debug\netcoreapp3.1\Razor\Pages\FormularioPropietario\Formulario2.cshtml.g.cs
 C:\MascotaFeliz V1\MascotaFeliz\MascotaFeliz.App.Presentacion\obj\Debug\netcoreapp3.1\Razor\Pages\FormularioVisita\Formulario1.cshtml.g.cs
+C:\MascotaFeliz\MascotaFeliz.App\MascotaFeliz.App.Presentacion\obj\Debug\netcoreapp3.1\Razor\Pages\FormularioPropietario\Formulario2.cshtml.g.cs
+C:\MascotaFeliz\MascotaFeliz.App\MascotaFeliz.App.Presentacion\obj\Debug\netcoreapp3.1\Razor\Pages\FormularioVisita\Formulario1.cshtml.g.cs
+C:\MascotaFeliz\MascotaFeliz.App\MascotaFeliz.App.Presentacion\obj\Debug\netcoreapp3.1\Razor\Pages\Propietario\Details.cshtml.g.cs
+C:\MascotaFeliz\MascotaFeliz.App\MascotaFeliz.App.Presentacion\obj\Debug\netcoreapp3.1\Razor\Pages\Visita\DetailsVisita.cshtml.g.cs
+C:\MascotaFeliz\MascotaFeliz.App\MascotaFeliz.App.Presentacion\obj\Debug\netcoreapp3.1\Razor\Pages\Mascota\ListMascota.cshtml.g.cs

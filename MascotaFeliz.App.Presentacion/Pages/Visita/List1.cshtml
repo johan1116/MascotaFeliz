@@ -14,6 +14,9 @@
         <col style="background-color: rgba(120, 250, 178, 0.452);">
         <col style="background-color: rgba(14, 221, 248, 0.397);">
         <col style="background-color: rgba(120, 250, 178, 0.452);">
+        <col style="background-color: rgba(14, 221, 248, 0.397);">
+        <col style="background-color: rgba(120, 250, 178, 0.452);">
+        <col style="background-color: rgba(14, 221, 248, 0.397);">
 
     </colgroup>
 
@@ -21,8 +24,11 @@
 
     <thead>
         <tr>
-            <td>Id Profesional del Veterinario</td>
+            <td>Id Visita</td>
+            <td>Veterinario</td>
+            <td>Mascota</td>
             <td>Fecha de la Visita Domiciliaria</td>
+            <td>Tarjeta Profesional</td>
             <td>Temperatura (°C)</td>
             <td>Masa Corporal (Kg)</td>
             <td>Frecuencia Respiratoria (rpm)</td>
@@ -37,11 +43,18 @@
             <td>
                 @Visita.Id
             </td>
-
+            <td>
+                @Visita.Veterinario.Nombre
+            </td>
+            <td>
+                @Visita.Mascota.NombreMascota
+            </td>
             <td>
                 @Visita.FechaHora
             </td>
-
+            <td>
+                @Visita.IdProfesional.TarjetaProfesional
+            </td>
             <td>
                 @Visita.Temperatura
             </td>
@@ -64,6 +77,12 @@
 
             <td>
                 @Visita.Recomendacion
+            </td>
+            <td>
+                <a class="btn btn-primary table-btn" asp-page="./DetailsVisita" asp-route-visitadomiciliariaId="@Visita.Id">
+                    <i class="fas  fa-info-circle"></i>
+                    Detalles Visita Domiciliaria
+                </a>
             </td>
 
         </tr>

@@ -1,0 +1,27 @@
+﻿@page
+@model MascotaFeliz.App.Presentacion.Pages.DetailsVisitaModel
+@{
+}
+<h2>Detalles de las Visitas</h2>
+<div>
+    Id: @Model.VisitaDomiciliaria.Id
+</div>
+<div>
+    FechaHora: @Model.VisitaDomiciliaria.FechaHora
+</div>
+<div>
+    Temperatura: @Model.VisitaDomiciliaria.Temperatura
+</div>
+<div>
+    FRespiratoria: @Model.VisitaDomiciliaria.FRespiratoria
+</div>
+<div>
+    FCardiaca: @Model.VisitaDomiciliaria.FCardiaca
+</div>
+<div>
+    EstadoAnimo: @Model.VisitaDomiciliaria.EstadoAnimo
+</div>
+<div>
+    Recomendacion: @Model.VisitaDomiciliaria.Recomendacion
+</div>
+<a asp-page ="./List1" class="btn-default">Lista de Visitas</a>

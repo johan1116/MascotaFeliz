@@ -14402,8 +14402,28 @@
   "RootNamespace": "MascotaFeliz.App.Presentacion",
   "Documents": [
     {
+      "FilePath": "c:\\MascotaFeliz\\MascotaFeliz.App\\MascotaFeliz.App.Presentacion\\Pages\\Veterinario\\ListVeterinario.cshtml",
+      "TargetPath": "Pages\\Veterinario\\ListVeterinario.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\MascotaFeliz\\MascotaFeliz.App\\MascotaFeliz.App.Presentacion\\Pages\\_ViewStart.cshtml",
       "TargetPath": "Pages\\_ViewStart.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\MascotaFeliz\\MascotaFeliz.App\\MascotaFeliz.App.Presentacion\\Pages\\FormularioPropietario\\Formulario2.cshtml",
+      "TargetPath": "Pages\\FormularioPropietario\\Formulario2.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\MascotaFeliz\\MascotaFeliz.App\\MascotaFeliz.App.Presentacion\\Pages\\FormularioVisita\\Formulario1.cshtml",
+      "TargetPath": "Pages\\FormularioVisita\\Formulario1.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\MascotaFeliz\\MascotaFeliz.App\\MascotaFeliz.App.Presentacion\\Pages\\Visita\\DetailsVisita.cshtml",
+      "TargetPath": "Pages\\Visita\\DetailsVisita.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -14429,6 +14449,21 @@
     {
       "FilePath": "c:\\MascotaFeliz\\MascotaFeliz.App\\MascotaFeliz.App.Presentacion\\Pages\\Error.cshtml",
       "TargetPath": "Pages\\Error.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\MascotaFeliz\\MascotaFeliz.App\\MascotaFeliz.App.Presentacion\\Pages\\Mascota\\ListMascota.cshtml",
+      "TargetPath": "Pages\\Mascota\\ListMascota.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\MascotaFeliz\\MascotaFeliz.App\\MascotaFeliz.App.Presentacion\\Pages\\Visita\\List1.cshtml",
+      "TargetPath": "Pages\\Visita\\List1.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\MascotaFeliz\\MascotaFeliz.App\\MascotaFeliz.App.Presentacion\\Pages\\Propietario\\Details.cshtml",
+      "TargetPath": "Pages\\Propietario\\Details.cshtml",
       "FileKind": "mvc"
     },
     {

@@ -44,6 +44,12 @@
             <td>
                 @Propietario.Direccion
             </td>
+            <td>
+                <a class="btn btn-primary table-btn" asp-page="./Details" asp-route-propietariomascotasId="@Propietario.Id">
+                    <i class="fas  fa-info-circle"></i>
+                    Detalles Propietario
+                </a>
+            </td>
         </tr>
     }
 
