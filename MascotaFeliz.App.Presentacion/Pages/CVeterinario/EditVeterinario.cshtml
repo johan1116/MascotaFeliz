@@ -1,0 +1,30 @@
+﻿@page
+@model MascotaFeliz.App.Presentacion.Pages.EditVeterinarioModel
+@{
+}
+<h2>Editar Veterinario:@Model.Veterinario.Nombre</h2> 
+<form method="post">
+    <input type="hidden" asp-for="Veterinario.Id" />
+    <div class="form-group">
+        <label asp-for="Veterinario.Nombre"></label>
+        <input asp-for="Veterinario.Nombre" class="for-control">
+        <span class="text-danger" asp-validation-for="Veterinario.Nombre"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Veterinario.Apellidos"></label>
+        <input asp-for="Veterinario.Apellidos" class="for-control">
+        <span class="text-danger" asp-validation-for="Veterinario.Apellidos"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Veterinario.Telefono"></label>
+        <input asp-for="Veterinario.Telefono" class="for-control">
+        <span class="text-danger" asp-validation-for="Veterinario.Telefono"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Veterinario.TarjetaProfesional"></label>
+        <input asp-for="Veterinario.TarjetaProfesional" class="for-control">
+        <span class="text-danger" asp-validation-for="Veterinario.TarjetaProfesional"></span>
+    </div>
+    <button type="submit" class="btn btn-primary">Grabar</button>
+</form>
+<a asp-page="./ListVeterinario" class="btn-default">Lista de Veterinarios</a>

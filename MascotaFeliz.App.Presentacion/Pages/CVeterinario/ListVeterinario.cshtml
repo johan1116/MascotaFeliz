@@ -1,0 +1,74 @@
+﻿@page
+@model MascotaFeliz.App.Presentacion.Pages.ListVeterinarioModel
+@{
+}
+@* <h1>Formulario Veterinario</h1>
+<table class="table">
+
+    <colgroup>
+        <col style="background-color: rgba(14, 221, 248, 0.397);">
+        <col style="background-color: rgba(120, 250, 178, 0.452);">
+        <col style="background-color: rgba(14, 221, 248, 0.397);">
+        <col style="background-color: rgba(120, 250, 178, 0.452);">
+        <col style="background-color: rgba(14, 221, 248, 0.397);">
+
+
+    </colgroup>
+
+    <caption><b>Listado Veterinarios</b></caption>
+    <thead>
+        <tr>
+            <td>Documento de Identidad</td>
+            <td>Nombre</td>
+            <td>Apellidos</td>
+            <td>Teléfono</td>
+            <td>Tarjeta Profesional</td>
+        </tr>
+    </thead>
+    @foreach (var Veterinario in Model.Veterinarios)
+    {
+
+        <tr>
+            <td>
+                @Veterinario.Id
+            </td>
+            <td>
+                @Veterinario.Nombre
+            </td>
+            <td>
+                @Veterinario.Apellidos
+            </td>
+            <td>
+                @Veterinario.Telefono
+            </td>
+            <td>
+                @Veterinario.TarjetaProfesional
+            </td>
+<<<<<<< HEAD:MascotaFeliz.App.Presentacion/Pages/Veterinario/ListVeterinario.cshtml
+             <td>
+                <a class="btn btn-primary table-btn" asp-page="./Details" asp-route-propietariomascotasId="@Propietario.Id">
+                    <i class="fas  fa-info-circle"></i>
+                    Detalles Propietario
+                </a>
+            </td>
+        </tr>
+    }
+
+</table> *@
+=======
+            <td>
+                <a class="btn btn-primary table-btn" asp-page="./DetailsVeterinario" asp-route-veterinarioId="@Veterinario.Id">
+                    <i class="fas  fa-info-circle fa-lg"></i>
+                    Detalles Veterinario
+                </a>
+            </td>
+            <td>
+                <a class="btn btn-primary table-btn" asp-page="./EditVeterinario" asp-route-veterinarioId="@Veterinario.Id">
+                    <i class="fas  fa-address-book fa-lg" aria-hidden="true"></i>
+                    Editar Visita
+                </a>
+        </tr>
+    }
+
+</table> 
+>>>>>>> 495f089109b65c874ab4a0ebedf181eb825fb033:MascotaFeliz.App.Presentacion/Pages/CVeterinario/ListVeterinario.cshtml

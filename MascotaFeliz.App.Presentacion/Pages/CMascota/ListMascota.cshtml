@@ -1,0 +1,64 @@
+﻿@page
+@model MascotaFeliz.App.Presentacion.Pages.ListMascotaModel
+@{
+}
+@* <h1>Formulario de Mascotas</h1>
+<table class="table">
+
+    <colgroup>
+        <col style="background-color: rgba(14, 221, 248, 0.397);">
+        <col style="background-color: rgba(120, 250, 178, 0.452);">
+        <col style="background-color: rgba(14, 221, 248, 0.397);">
+        <col style="background-color: rgba(120, 250, 178, 0.452);">
+        @* <col style="background-color: rgba(14, 221, 248, 0.397);"> *@
+
+
+    </colgroup>
+
+    <caption><b>Listado de Mascotas</b></caption>
+    <thead>
+        <tr>
+            <td>Id Mascota</td>
+            @* <td>Nombre</td> *@
+            <td>Caracteristica</td>
+            <td>Propietario</td>
+            <td>tipo de mascota</td>
+        </tr>
+    </thead>
+    @foreach (var Mascota in Model.Mascotas)
+    {
+
+        <tr>
+            <td>
+                @Mascota.Id
+            </td>
+            <td>
+                @Mascota.NombreMascota
+            </td>
+            <td>
+                @Mascota.Caracteristicas
+            </td>
+            @* <td>
+                @Mascota.PropietarioMascota.Nombre
+            </td> *@
+            <td>
+                @Mascota.TipoMascota
+            </td>
+             <td>
+                <a class="btn btn-primary table-btn" asp-page="./Details" asp-route-propietariomascotasId="@Propietario.Id">
+                    <i class="fas  fa-info-circle"></i>
+                    Detalles Propietario
+                </a>
+<<<<<<< HEAD:MascotaFeliz.App.Presentacion/Pages/Mascota/ListMascota.cshtml
+            </td> 
+        </tr>
+    }
+
+</table> *@
+=======
+            </td>   *@
+        </tr>
+    }
+
+</table> 
+>>>>>>> 495f089109b65c874ab4a0ebedf181eb825fb033:MascotaFeliz.App.Presentacion/Pages/CMascota/ListMascota.cshtml

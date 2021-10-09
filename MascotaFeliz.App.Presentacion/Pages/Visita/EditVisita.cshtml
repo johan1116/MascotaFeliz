@@ -1,0 +1,45 @@
+﻿@page
+@model MascotaFeliz.App.Presentacion.Pages.EditVisitaModel
+@{
+}
+<h2>Editar Visita:@Model.VisitaDomiciliaria.Recomendacion</h2>
+<form method="post">
+    <input type="hidden" asp-for="VisitaDomiciliaria.Id"/>
+    <div class="form-group">
+        <label asp-for="VisitaDomiciliaria.FechaHora"></label>
+        <input asp-for ="VisitaDomiciliaria.FechaHora" class="for-control">
+        <span class="text-danger" asp-validation-for="VisitaDomiciliaria.FechaHora"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="VisitaDomiciliaria.Temperatura"></label>
+        <input asp-for ="VisitaDomiciliaria.Temperatura" class="for-control">
+        <span class="text-danger" asp-validation-for="VisitaDomiciliaria.Temperatura"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="VisitaDomiciliaria.Peso"></label>
+        <input asp-for ="VisitaDomiciliaria.Peso" class="for-control">
+        <span class="text-danger" asp-validation-for="VisitaDomiciliaria.Peso"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="VisitaDomiciliaria.FRespiratoria"></label>
+        <input asp-for ="VisitaDomiciliaria.FRespiratoria" class="for-control">
+        <span class="text-danger" asp-validation-for="VisitaDomiciliaria.FRespiratoria"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="VisitaDomiciliaria.FCardiaca"></label>
+        <input asp-for ="VisitaDomiciliaria.FCardiaca" class="for-control">
+        <span class="text-danger" asp-validation-for="VisitaDomiciliaria.FCardiaca"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="VisitaDomiciliaria.EstadoAnimo"></label>
+        <input asp-for ="VisitaDomiciliaria.EstadoAnimo" class="for-control">
+        <span class="text-danger" asp-validation-for="VisitaDomiciliaria.EstadoAnimo"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="VisitaDomiciliaria.Recomendacion"></label>
+        <input asp-for ="VisitaDomiciliaria.Recomendacion" class="for-control">
+        <span class="text-danger" asp-validation-for="VisitaDomiciliaria.Recomendacion"></span>
+    </div>
+    <button type="submit" class="btn btn-primary">Grabar</button>
+</form>
+<a asp-page ="./List1" class="btn-default">Lista de Visitas</a>
