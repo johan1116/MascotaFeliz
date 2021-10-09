@@ -14427,6 +14427,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\MascotaFeliz V1\\MascotaFeliz\\MascotaFeliz.App.Presentacion\\Pages\\FormularioVeterinario\\Formulario4.cshtml",
+      "TargetPath": "Pages\\FormularioVeterinario\\Formulario4.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\MascotaFeliz V1\\MascotaFeliz\\MascotaFeliz.App.Presentacion\\Pages\\Error.cshtml",
       "TargetPath": "Pages\\Error.cshtml",
       "FileKind": "mvc"
@@ -14434,6 +14439,11 @@
     {
       "FilePath": "c:\\MascotaFeliz V1\\MascotaFeliz\\MascotaFeliz.App.Presentacion\\Pages\\Visita\\DetailsVisita.cshtml",
       "TargetPath": "Pages\\Visita\\DetailsVisita.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\MascotaFeliz V1\\MascotaFeliz\\MascotaFeliz.App.Presentacion\\Pages\\FormularioMascota\\Formulario3.cshtml",
+      "TargetPath": "Pages\\FormularioMascota\\Formulario3.cshtml",
       "FileKind": "mvc"
     },
     {

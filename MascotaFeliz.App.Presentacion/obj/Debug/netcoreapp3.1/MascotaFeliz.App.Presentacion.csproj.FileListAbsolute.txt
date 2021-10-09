@@ -260,3 +260,5 @@ C:\MascotaFeliz V1\MascotaFeliz\MascotaFeliz.App.Presentacion\obj\Debug\netcorea
 C:\MascotaFeliz V1\MascotaFeliz\MascotaFeliz.App.Presentacion\obj\Debug\netcoreapp3.1\Razor\Pages\Propietario\Details.cshtml.g.cs
 C:\MascotaFeliz V1\MascotaFeliz\MascotaFeliz.App.Presentacion\obj\Debug\netcoreapp3.1\Razor\Pages\Veterinario\ListVeterinario.cshtml.g.cs
 C:\MascotaFeliz V1\MascotaFeliz\MascotaFeliz.App.Presentacion\obj\Debug\netcoreapp3.1\Razor\Pages\Visita\DetailsVisita.cshtml.g.cs
+C:\MascotaFeliz V1\MascotaFeliz\MascotaFeliz.App.Presentacion\obj\Debug\netcoreapp3.1\Razor\Pages\FormularioMascota\Formulario3.cshtml.g.cs
+C:\MascotaFeliz V1\MascotaFeliz\MascotaFeliz.App.Presentacion\obj\Debug\netcoreapp3.1\Razor\Pages\FormularioVeterinario\Formulario4.cshtml.g.cs
