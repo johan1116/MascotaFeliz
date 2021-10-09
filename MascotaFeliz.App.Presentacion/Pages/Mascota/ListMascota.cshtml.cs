@@ -11,18 +11,11 @@ namespace MascotaFeliz.App.Presentacion.Pages
 {
     public class ListMascotaModel : PageModel
     {
-        private readonly IRepositorioMascotas repositorioMascota;
-
-        public IEnumerable<Mascota> Mascotas{get;set;}
-
-        public ListMascotaModel(IRepositorioMascotas repositorioMascota)
-        {
-            this.repositorioMascota = repositorioMascota;
-        }
+       
 
         public void OnGet()
         {
-            Mascotas = repositorioMascota.GetAll();
+           
 
 
         }

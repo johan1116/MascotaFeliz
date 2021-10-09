@@ -1,100 +1,105 @@
 ﻿@page
 @model MascotaFeliz.App.Presentacion.Pages.Formulario1Model
 @{
+      ViewData["Title"] = "Visita";
 }
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registro Visita</title>
+<div class="framework">
 
-    <link rel="stylesheet" href="estilos.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <!-- <link rel="stylesheet" href="~/css/site.css" /> -->
-    <link rel="stylesheet" href="~/css/estilos.css" />
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Registro Visita</title>
 
-</head>
+        <link rel="stylesheet" href="estilos.css">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <!-- <link rel="stylesheet" href="~/css/site.css" /> -->
+        <link rel="stylesheet" href="~/css/estilos.css" />
 
-<body>
-    <div class="fondo">
-        <div class="Encabezado">
-            <img class="imagen1" src="~/imagen/pet4.png">
-            <h1 class="logo"> Mundo <span>Paticas</span> </h1>
-        </div>
-        <div class="contenido">
+    </head>
 
-            <form action="" method="POST" id="form1">
-                <h1>Visita Domiciliaria</h1>
-                <div class="form">
+    <div>
+        <div class="fondo">
+            <div class="Encabezado">
+                <img class="imagen1" src="~/imagen/pet4.png">
+                <h1 class="logo"> Mundo <span>Paticas</span> </h1>
+            </div>
+            <div class="contenido">
 
-                    <div class="grupo">
-                        <input type="date" name="" id="fecha" required><span class="barra"></span>
-                    </div>
-                    <div class="grupo">
-                        <input inputmode="numeric" name="" id="tarjeta" required><span class="barra"></span>
-                        <label for="">Tarjeta profesional </label>
-                    </div>
-                    <div class="grupo">
-                        <input inputmode="numeric" name="" id="peso" required><span class="barra"></span>
-                        <label for="">Peso de la mascota</label>
-                    </div>
-                    <div class="grupo">
-                        <input type="text" name="" id="temperatura" required><span class="barra"></span>
-                        <label for="">Temperatura en grados</label>
-                    </div>
-                    <div class="grupo">
-                        <select name="menu">
-                            <option value="0">Estado de ánimo</option>
-                            <option value="1">Bueno</option>
-                            <option value="2">Regular</option>
-                            <option value="3">Malo</option>
-                        </select>
-                    </div>
+                <form action="" method="POST" id="form1">
+                    <h1>Visita Domiciliaria</h1>
+                    <div class="form">
 
-                    <div class="grupo">
-                        <input type="text" name="" id="tarjeta" required><span class="barra"></span>
-                        <label for="">Frecuencia cardiaca</label>
-                    </div>
-                    <div class="grupo">
-                        <input type="text" name="" id="tarjeta" required><span class="barra"></span>
-                        <label for="">Frecuencia respitatoria</label>
-                    </div>
-                    <div class="bloque1">
-                        <textarea name="texto" rows="4" required>Observaciones</textarea><span class="barra"></span>
-                    </div>
+                        <div class="grupo">
+                            <input type="date" name="" id="fecha" required><span class="barra"></span>
+                        </div>
+                        <div class="grupo">
+                            <input inputmode="numeric" name="" id="tarjeta" required><span class="barra"></span>
+                            <label for="">Tarjeta profesional </label>
+                        </div>
+                        <div class="grupo">
+                            <input inputmode="numeric" name="" id="peso" required><span class="barra"></span>
+                            <label for="">Peso de la mascota</label>
+                        </div>
+                        <div class="grupo">
+                            <input type="text" name="" id="temperatura" required><span class="barra"></span>
+                            <label for="">Temperatura en grados</label>
+                        </div>
+                        <div class="grupo">
+                            <select name="menu">
+                                <option value="0">Estado de ánimo</option>
+                                <option value="1">Bueno</option>
+                                <option value="2">Regular</option>
+                                <option value="3">Malo</option>
+                            </select>
+                        </div>
 
-                    <div class="bloque"><button type="submit">Enviar</button></div>
+                        <div class="grupo">
+                            <input type="text" name="" id="tarjeta" required><span class="barra"></span>
+                            <label for="">Frecuencia cardiaca</label>
+                        </div>
+                        <div class="grupo">
+                            <input type="text" name="" id="tarjeta" required><span class="barra"></span>
+                            <label for="">Frecuencia respitatoria</label>
+                        </div>
+                        <div class="bloque1">
+                            <textarea name="texto" rows="4" required>Observaciones</textarea><span class="barra"></span>
+                        </div>
+
+                        <div class="bloque"><button type="submit">Enviar</button></div>
+
+                    </div>
+                </form>
+                <div class="info1">
+                    <h4><b>Mayor Información</b></h4>
+                    <ul>
+
+                        <li> <i class="material-icons">location_on</i> Avenida Esperanza N° 26-16 </li>
+                        <li> <i class="material-icons">call</i> 601 - 8641223 </li>
+                        <li> <i class="material-icons">mail</i> mundopaticas@gmail.com </li>
+                        <li><i class="material-icons">whatsapp</i> +57 3132256147</li>
+                        <li><i class="material-icons">facebook</i> <a href="https://www.facebook.com"
+                                target="_blank">Mundo
+                                Paticas</a> </li>
+
+
+                    </ul>
+                    <p>
+                        Somos una empresa especializada <br> en el cuidado de tu mascota.<br>
+                        Ofrecemos una amplia gama de servicios <br> de alta calidad y
+                        experiencia <br> confortable para ti y tu peludito.<br>
+                    </p>
+
+                    <p class="Yotta">Elaborado por</p>
+                    <img class="imagen2" src="~/imagen/yota1.png">
+
+
 
                 </div>
-            </form>
-            <div class="info1">
-                <h4><b>Mayor Información</b></h4>
-                <ul>
-
-                    <li> <i class="material-icons">location_on</i> Avenida Esperanza N° 26-16 </li>
-                    <li> <i class="material-icons">call</i> 601 - 8641223 </li>
-                    <li> <i class="material-icons">mail</i> mundopaticas@gmail.com </li>
-                    <li><i class="material-icons">whatsapp</i> +57 3132256147</li>
-                    <li><i class="material-icons">facebook</i> <a href="https://www.facebook.com" target="_blank">Mundo
-                            Paticas</a> </li>
-
-
-                </ul>
-                <p>
-                    Somos una empresa especializada <br> en el cuidado de tu mascota.<br>
-                    Ofrecemos una amplia gama de servicios <br> de alta calidad y
-                    experiencia <br> confortable para ti y tu peludito.<br>
-                </p>
-
-                <p class="Yotta">Elaborado por</p>
-                <img class="imagen2" src="~/imagen/yota1.png">   
-                
-                
 
             </div>
 
         </div>
 
     </div>
-
-</body>
+</div>
