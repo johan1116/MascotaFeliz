@@ -44,13 +44,18 @@
             <td>
                 @Veterinario.TarjetaProfesional
             </td>
-            @* <td>
-                <a class="btn btn-primary table-btn" asp-page="./Details" asp-route-propietariomascotasId="@Propietario.Id">
-                    <i class="fas  fa-info-circle"></i>
-                    Detalles Propietario
+            <td>
+                <a class="btn btn-primary table-btn" asp-page="./DetailsVeterinario" asp-route-veterinarioId="@Veterinario.Id">
+                    <i class="fas  fa-info-circle fa-lg"></i>
+                    Detalles Veterinario
                 </a>
-            </td> *@
+            </td>
+            <td>
+                <a class="btn btn-primary table-btn" asp-page="./EditVeterinario" asp-route-veterinarioId="@Veterinario.Id">
+                    <i class="fas  fa-address-book fa-lg" aria-hidden="true"></i>
+                    Editar Visita
+                </a>
         </tr>
     }
 
-</table>
+</table> 

@@ -14402,18 +14402,23 @@
   "RootNamespace": "MascotaFeliz.App.Presentacion",
   "Documents": [
     {
-      "FilePath": "c:\\MascotaFeliz\\MascotaFeliz.App\\MascotaFeliz.App.Presentacion\\Pages\\Veterinario\\ListVeterinario.cshtml",
-      "TargetPath": "Pages\\Veterinario\\ListVeterinario.cshtml",
-      "FileKind": "mvc"
-    },
-    {
       "FilePath": "c:\\MascotaFeliz\\MascotaFeliz.App\\MascotaFeliz.App.Presentacion\\Pages\\_ViewStart.cshtml",
       "TargetPath": "Pages\\_ViewStart.cshtml",
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\MascotaFeliz\\MascotaFeliz.App\\MascotaFeliz.App.Presentacion\\Pages\\CVeterinario\\ListVeterinario.cshtml",
+      "TargetPath": "Pages\\CVeterinario\\ListVeterinario.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\MascotaFeliz\\MascotaFeliz.App\\MascotaFeliz.App.Presentacion\\Pages\\FormularioPropietario\\Formulario2.cshtml",
       "TargetPath": "Pages\\FormularioPropietario\\Formulario2.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\MascotaFeliz\\MascotaFeliz.App\\MascotaFeliz.App.Presentacion\\Pages\\Visita\\EditVisita.cshtml",
+      "TargetPath": "Pages\\Visita\\EditVisita.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -14452,8 +14457,8 @@
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\MascotaFeliz\\MascotaFeliz.App\\MascotaFeliz.App.Presentacion\\Pages\\Mascota\\ListMascota.cshtml",
-      "TargetPath": "Pages\\Mascota\\ListMascota.cshtml",
+      "FilePath": "c:\\MascotaFeliz\\MascotaFeliz.App\\MascotaFeliz.App.Presentacion\\Pages\\CVeterinario\\EditVeterinario.cshtml",
+      "TargetPath": "Pages\\CVeterinario\\EditVeterinario.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -14469,6 +14474,21 @@
     {
       "FilePath": "c:\\MascotaFeliz\\MascotaFeliz.App\\MascotaFeliz.App.Presentacion\\Pages\\Privacy.cshtml",
       "TargetPath": "Pages\\Privacy.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\MascotaFeliz\\MascotaFeliz.App\\MascotaFeliz.App.Presentacion\\Pages\\CVeterinario\\DetailsVeterinario.cshtml",
+      "TargetPath": "Pages\\CVeterinario\\DetailsVeterinario.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\MascotaFeliz\\MascotaFeliz.App\\MascotaFeliz.App.Presentacion\\Pages\\CMascota\\ListMascota.cshtml",
+      "TargetPath": "Pages\\CMascota\\ListMascota.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\MascotaFeliz\\MascotaFeliz.App\\MascotaFeliz.App.Presentacion\\Pages\\Propietario\\EditPropietario.cshtml",
+      "TargetPath": "Pages\\Propietario\\EditPropietario.cshtml",
       "FileKind": "mvc"
     },
     {

@@ -14,9 +14,9 @@
         <col style="background-color: rgba(120, 250, 178, 0.452);">
         <col style="background-color: rgba(14, 221, 248, 0.397);">
         <col style="background-color: rgba(120, 250, 178, 0.452);">
-        <col style="background-color: rgba(14, 221, 248, 0.397);">
+        @* <col style="background-color: rgba(14, 221, 248, 0.397);">
         <col style="background-color: rgba(120, 250, 178, 0.452);">
-        <col style="background-color: rgba(14, 221, 248, 0.397);">
+        <col style="background-color: rgba(14, 221, 248, 0.397);"> *@
 
     </colgroup>
 
@@ -25,10 +25,10 @@
     <thead>
         <tr>
             <td>Id Visita</td>
-            <td>Veterinario</td>
-            <td>Mascota</td>
+            @* <td>Veterinario</td> *@
+            @* <td>Mascota</td> *@
             <td>Fecha de la Visita Domiciliaria</td>
-            <td>Tarjeta Profesional</td>
+            @* <td>Tarjeta Profesional</td> *@
             <td>Temperatura (°C)</td>
             <td>Masa Corporal (Kg)</td>
             <td>Frecuencia Respiratoria (rpm)</td>
@@ -43,18 +43,18 @@
             <td>
                 @Visita.Id
             </td>
-            <td>
+            @* <td>
                 @Visita.Veterinario.Nombre
-            </td>
-            <td>
+            </td> *@
+            @* <td>
                 @Visita.Mascota.NombreMascota
-            </td>
+            </td> *@
             <td>
                 @Visita.FechaHora
             </td>
-            <td>
+            @* <td>
                 @Visita.IdProfesional.TarjetaProfesional
-            </td>
+            </td> *@
             <td>
                 @Visita.Temperatura
             </td>
@@ -80,8 +80,14 @@
             </td>
             <td>
                 <a class="btn btn-primary table-btn" asp-page="./DetailsVisita" asp-route-visitadomiciliariaId="@Visita.Id">
-                    <i class="fas  fa-info-circle"></i>
-                    Detalles Visita Domiciliaria
+                    <i class="fas  fa-info-circle fa-lg"></i>
+                    Detalles Visita
+                </a>
+            </td>
+            <td>
+                <a class="btn btn-primary table-btn" asp-page="./EditVisita" asp-route-visitadomiciliariaId="@Visita.Id">
+                    <i class="fas  fa-address-book fa-lg" aria-hidden="true"></i>
+                    Editar Visita
                 </a>
             </td>
 

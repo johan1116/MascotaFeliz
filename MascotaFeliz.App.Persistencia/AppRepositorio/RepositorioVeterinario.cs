@@ -25,5 +25,10 @@ namespace MascotaFeliz.App.Persistencia.AppRepositorios
         {
             return veterinarios;
         }
+
+        public Veterinario GetVeterinarioPorId(int veterinarioID)
+        {
+            return veterinarios.SingleOrDefault(ve => ve.Id == veterinarioID);
+        }
     }
 }

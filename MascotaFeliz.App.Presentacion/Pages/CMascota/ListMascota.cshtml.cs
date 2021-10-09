@@ -1,3 +1,4 @@
+
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,7 +11,7 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 namespace MascotaFeliz.App.Presentacion.Pages
 {
     public class ListMascotaModel : PageModel
-    {
+    {  
         private readonly IRepositorioMascotas repositorioMascota;
 
         public IEnumerable<Mascota> Mascotas{get;set;}

@@ -10,7 +10,7 @@
         <col style="background-color: rgba(120, 250, 178, 0.452);">
         <col style="background-color: rgba(14, 221, 248, 0.397);">
         <col style="background-color: rgba(120, 250, 178, 0.452);">
-        <col style="background-color: rgba(14, 221, 248, 0.397);">
+        @* <col style="background-color: rgba(14, 221, 248, 0.397);"> *@
 
 
     </colgroup>
@@ -19,7 +19,7 @@
     <thead>
         <tr>
             <td>Id Mascota</td>
-            <td>Nombre</td>
+            @* <td>Nombre</td> *@
             <td>Caracteristica</td>
             <td>Propietario</td>
             <td>tipo de mascota</td>
@@ -38,9 +38,9 @@
             <td>
                 @Mascota.Caracteristicas
             </td>
-            <td>
+            @* <td>
                 @Mascota.PropietarioMascota.Nombre
-            </td>
+            </td> *@
             <td>
                 @Mascota.TipoMascota
             </td>
@@ -49,8 +49,8 @@
                     <i class="fas  fa-info-circle"></i>
                     Detalles Propietario
                 </a>
-            </td> *@
+            </td>   *@
         </tr>
     }
 
-</table>
+</table> 
