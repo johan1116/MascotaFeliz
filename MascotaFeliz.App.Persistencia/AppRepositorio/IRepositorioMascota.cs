@@ -9,7 +9,7 @@ namespace MascotaFeliz.App.Persistencia.AppRepositorios
     {
         IEnumerable<Mascota> GetAll();
 
-        
+        Mascota GetMascotaPorId(int mascotaID);
 
     }
 }

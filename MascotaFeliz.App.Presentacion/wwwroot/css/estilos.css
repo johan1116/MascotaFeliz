@@ -13,118 +13,122 @@
 
 .framework {
   font-family: 'Roboto';
-  background: #43cea2;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #185a9d, #43cea2);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #185a9d, #43cea2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: white;
+  /* fallback for old browsers */
   height: 1150px;
   display: flex;
- 
-  align-items:flex-start;
+  align-items: flex-start;
   width: 120%;
   padding: 0px 0px;
 
 }
 
-.fondo{
+.fondo {
   padding: 60px 80px;
 }
 
 
 .Encabezado img,
-.Encabezado .logo{
+.Encabezado .logo {
   /*display:inline;*/
- display:block;
+  display: block;
   margin-left: auto;
   margin-right: auto;
 }
-  
 
 
 
 
-.fondo img{
+
+.fondo img {
   /* width:px;
   height:23px;*/
-  width:120px; /* you can use % */ height: auto; 
-  
-}  
+  width: 120px;
+  /* you can use % */
+  height: auto;
 
-.logo{
+}
+
+.logo {
   text-align: center;
   font-size: 1.2cm;
   color: #fff;
 }
 
-.logo span{
-  color:rgb(35, 20, 241)
+.logo span {
+  color: #5a8970;
 }
 
-h1{
+h1 {
   text-align: center;
   font-weight: 700;
 }
 
-.contenido{
-  display:grid;
+.contenido {
+  display: grid;
   grid-template-columns: 2fr .8fr;
 }
 
-form{
+form {
   background: #fff;
   padding: 40px 0;
-  box-shadow: 0 0 6px 0 rgba(255, 255, 255, 0.8);
+  box-shadow: 0 0 30px 0 #5a8970;
   border-radius: 10px;
 }
 
-.form1{
+.form1 {
   background: #fff;
   padding: 40px 20px;
-  box-shadow: 0 0 6px 0 rgba(255, 255, 255, 0.8);
+  box-shadow: 0 0 6px 0 #fff;
   border-radius: 10px;
 }
 
-.form{
+.form {
   width: 100%;
   margin: auto;
   display: grid;
   grid-template-columns: 1.4fr 1.6fr 1.5fr;
 }
 
-.form2{
+.form2 {
   width: 100%;
   margin: auto;
   display: grid;
-  grid-template-columns: 1fr 1fr ;
+  grid-template-columns: 1fr 1fr;
 }
 
 
-.form .bloque{grid-column: 1 / 4;}
-.form .bloque1{grid-column: 1 / 4;
+.form .bloque {
+  grid-column: 1 / 4;
+}
+
+.form .bloque1 {
+  grid-column: 1 / 4;
   position: center;
-  margin: 45px ;
-  
+  margin: 45px;
+
 }
 
-.form2 .bloque2{
+.form2 .bloque2 {
 
   grid-column: 1 / 3;
   position: center;
-  margin: 45px ;
+  margin: 45px;
 
 }
 
-.form2 .bloque3{
+.form2 .bloque3 {
 
   grid-column: 1 / 3;
 }
 
 
-form .grupo{
+form .grupo {
   position: relative;
-  margin: 45px ;
+  margin: 45px;
 }
 
-input{
+input {
   background: none;
   color: #c6c6c6;
   font-size: 18px;
@@ -147,7 +151,8 @@ textarea {
   border: 1px solid var(--colorTextos);
 
 }
-select{
+
+select {
   font-family: 'Roboto';
   background: none;
   color: #c6c6c6;
@@ -159,12 +164,12 @@ select{
   border-bottom: 1px solid var(--colorTextos);
 }
 
-input:focus{ 
+input:focus {
   outline: none;
   color: #5e5d5d;
 }
 
-label{
+label {
   color: var(--colorTextos);
   font-size: 16px;
   position: absolute;
@@ -175,39 +180,48 @@ label{
 }
 
 input:focus~label,
-input:valid~label{
+input:valid~label {
   top: -14px;
   font-size: 12px;
-  color: #2196f3;
+  color: #5a8970;
 }
 
-.barra{
+.barra {
   position: relative;
   display: block;
   width: 100%;
 }
 
-.barra::before{
+.barra::before {
   content: "";
   height: 2px;
   width: 0%;
   bottom: 0;
   position: absolute;
-  background: linear-gradient(to right, #185a9d, #43cea2);
+  background: linear-gradient(to right,
+      #5a8970,
+      #7ad653);
   transition: 0.3s ease width;
   left: 0;
 }
 
-input:focus~.barra::before{
+input:focus~.barra::before {
   width: 100%;
 }
 
 
-button{
+button {
   font-family: 'roboto';
-  background: #43cea2;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #185a9d, #43cea2);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #185a9d, #43cea2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #7ad653;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right,
+      #5a8970,
+      #7ad653);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right,
+      #5a8970,
+      #7ad653);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   border: none;
   display: block;
   width: 80%;
@@ -219,18 +233,25 @@ button{
 }
 
 .form button:hover,
-.form button:focus{
-  background: #43cea2;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #185a9d, #43cea2);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #185a9d, #43cea2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  color:#fff;
-  outline:0;
+.form button:focus {
+  background: #7ad653;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right,
+      #5a8970,
+      #7ad653);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right,
+      #5a8970,
+      #7ad653);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: #fff;
+  outline: 0;
 }
 
-.info{
+.info {
   font-family: 'Roboto';
   color: rgba(255, 255, 255, 0.8);
-  background: rgb(36, 186, 206);
+  background: #7ad653;
   padding: 20px 20px;
   box-shadow: 0 0 6px 0 rgba(255, 255, 255, 0.8);
   border-radius: 10px;
@@ -240,41 +261,43 @@ button{
 .info ul,
 .info p,
 .info .Yotta,
-.info img{
+.info img {
   text-align: center;
   margin: 0 0 1rem 0;
 }
 
-.info h4{
+.info h4 {
   font-size: 19px;
 }
 
-.info ul{
+.info ul {
   list-style: none;
   text-align: left;
   padding: 0;
 }
 
-.info ul li{
+.info ul li {
   padding: .3em;
 }
 
-.info .Yotta{
+.info .Yotta {
   font-size: 13px;
 }
 
-.info img{
-/* width:px;
+.info img {
+  /* width:px;
 height:23px;*/
-display:block;
-margin-left: auto;
-margin-right: auto;
- width:100px; /* you can use % */ height: auto; 
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100px;
+  /* you can use % */
+  height: auto;
 
-} 
+}
 
 
-.info1{
+.info1 {
   font-family: 'Roboto';
   color: rgba(255, 255, 255, 0.8);
   background: #7ad653;
@@ -286,42 +309,43 @@ margin-right: auto;
 .info1 h4,
 .info1 ul,
 .info1 p,
-.info1 .Yotta{
+.info1 .Yotta {
   text-align: center;
   margin: 3rem 0 3rem 0;
 }
 
-.info1 h4{
+.info1 h4 {
   font-size: 19px;
 }
 
-.info1 ul{
+.info1 ul {
   list-style: none;
   text-align: left;
   padding: 0;
 }
 
-.info1 ul li{
+.info1 ul li {
   padding: .3em;
 }
 
-.info1 .Yotta{
+.info1 .Yotta {
   font-size: 13px;
 }
 
-.info1 img{
+.info1 img {
   /* width:px;
   height:23px;*/
-  display:block;
+  display: block;
   margin-left: auto;
   margin-right: auto;
-   width:100px; /* you can use % */ height: auto; 
-  
-} 
+  width: 100px;
+  /* you can use % */
+  height: auto;
 
-@media screen and (max-width:500px){
-  form{
-      width: 80%;
-  }
 }
 
+@media screen and (max-width:500px) {
+  form {
+    width: 80%;
+  }
+}

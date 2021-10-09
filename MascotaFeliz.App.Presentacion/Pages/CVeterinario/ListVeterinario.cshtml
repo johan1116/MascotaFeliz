@@ -2,7 +2,7 @@
 @model MascotaFeliz.App.Presentacion.Pages.ListVeterinarioModel
 @{
 }
-@* <h1>Formulario Veterinario</h1>
+<h1>Formulario Veterinario</h1>
 <table class="table">
 
     <colgroup>
@@ -44,18 +44,6 @@
             <td>
                 @Veterinario.TarjetaProfesional
             </td>
-<<<<<<< HEAD:MascotaFeliz.App.Presentacion/Pages/Veterinario/ListVeterinario.cshtml
-             <td>
-                <a class="btn btn-primary table-btn" asp-page="./Details" asp-route-propietariomascotasId="@Propietario.Id">
-                    <i class="fas  fa-info-circle"></i>
-                    Detalles Propietario
-                </a>
-            </td>
-        </tr>
-    }
-
-</table> *@
-=======
             <td>
                 <a class="btn btn-primary table-btn" asp-page="./DetailsVeterinario" asp-route-veterinarioId="@Veterinario.Id">
                     <i class="fas  fa-info-circle fa-lg"></i>
@@ -65,10 +53,10 @@
             <td>
                 <a class="btn btn-primary table-btn" asp-page="./EditVeterinario" asp-route-veterinarioId="@Veterinario.Id">
                     <i class="fas  fa-address-book fa-lg" aria-hidden="true"></i>
-                    Editar Visita
+                    Editar Veterinario
                 </a>
+            </td>    
         </tr>
     }
 
-</table> 
->>>>>>> 495f089109b65c874ab4a0ebedf181eb825fb033:MascotaFeliz.App.Presentacion/Pages/CVeterinario/ListVeterinario.cshtml
+</table>

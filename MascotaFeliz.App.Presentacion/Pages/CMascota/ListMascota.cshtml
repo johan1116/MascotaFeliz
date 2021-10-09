@@ -2,7 +2,7 @@
 @model MascotaFeliz.App.Presentacion.Pages.ListMascotaModel
 @{
 }
-@* <h1>Formulario de Mascotas</h1>
+<h1>Formulario de Mascotas</h1>
 <table class="table">
 
     <colgroup>
@@ -40,25 +40,18 @@
             </td>
             @* <td>
                 @Mascota.PropietarioMascota.Nombre
-            </td> *@
+                </td> *@
             <td>
                 @Mascota.TipoMascota
             </td>
-             <td>
-                <a class="btn btn-primary table-btn" asp-page="./Details" asp-route-propietariomascotasId="@Propietario.Id">
+            @* <td>
+                <a class="btn btn-primary table-btn" asp-page="./Details" asp-route-propietariomascotasId="@Mascota.Id">
                     <i class="fas  fa-info-circle"></i>
                     Detalles Propietario
                 </a>
-<<<<<<< HEAD:MascotaFeliz.App.Presentacion/Pages/Mascota/ListMascota.cshtml
-            </td> 
+
+            </td> *@
         </tr>
     }
 
-</table> *@
-=======
-            </td>   *@
-        </tr>
-    }
-
-</table> 
->>>>>>> 495f089109b65c874ab4a0ebedf181eb825fb033:MascotaFeliz.App.Presentacion/Pages/CMascota/ListMascota.cshtml
+</table>

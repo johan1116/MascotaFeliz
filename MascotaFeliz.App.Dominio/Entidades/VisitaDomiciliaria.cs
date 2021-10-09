@@ -4,7 +4,7 @@ namespace MascotaFeliz.App.Dominio
     public class VisitaDomiciliaria
     {
         public int Id { get; set; }
-        public Veterinario Docvete { get; set; }
+        public Veterinario Veterinario { get; set; }
         public Mascota Mascota { get; set; }
         public DateTime FechaHora { get; set; }
         public Veterinario IdProfesional { get; set; }
