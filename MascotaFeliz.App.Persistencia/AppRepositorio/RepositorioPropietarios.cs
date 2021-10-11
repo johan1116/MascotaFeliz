@@ -19,6 +19,14 @@ namespace MascotaFeliz.App.Persistencia.AppRepositorios
 
             };
         }
+
+        public PropietarioMascota Add(PropietarioMascota nuevoPropietario)
+        {
+            nuevoPropietario.Id=propietariomascotas.Max(np => np.Id)+1;
+            propietariomascotas.Add(nuevoPropietario);
+            return nuevoPropietario;
+        }
+
         public IEnumerable<PropietarioMascota> GetAll()
         {
             return propietariomascotas;
@@ -28,5 +36,21 @@ namespace MascotaFeliz.App.Persistencia.AppRepositorios
         {
             return propietariomascotas.SingleOrDefault(p => p.Id == propietariomascotasID);
         }
+
+        public PropietarioMascota Update(PropietarioMascota propietarioActualizado)
+        {
+            var propietario = propietariomascotas.SingleOrDefault(pr => pr.Id == propietarioActualizado.Id);
+            if (propietario != null)
+            {
+                propietario.Documento = propietarioActualizado.Documento;
+                propietario.Nombre = propietarioActualizado.Nombre;
+                propietario.Apellidos = propietarioActualizado.Apellidos;
+                propietario.Telefono = propietarioActualizado.Telefono;
+                propietario.Direccion = propietarioActualizado.Direccion;
+                
+            }
+            return propietario;
+        }
+        
     }
 }

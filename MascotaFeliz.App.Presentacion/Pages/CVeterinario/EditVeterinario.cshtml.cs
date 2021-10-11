@@ -12,24 +12,44 @@ namespace MascotaFeliz.App.Presentacion.Pages
     public class EditVeterinarioModel : PageModel
     {
         private readonly IRepositorioVeterinario repositorioVeterinario;
-
-        public Veterinario Veterinario {get;set;}
+        [BindProperty]
+        public Veterinario Veterinario { get; set; }
 
         public EditVeterinarioModel(IRepositorioVeterinario repositorioVeterinario)
         {
             this.repositorioVeterinario = repositorioVeterinario;
         }
 
-        public IActionResult OnGet(int veterinarioId)
+        public IActionResult OnGet(int? veterinarioId)
         {
-            Veterinario = repositorioVeterinario.GetVeterinarioPorId(veterinarioId);
-            if(Veterinario == null)
+            if (veterinarioId.HasValue)
+            {
+                Veterinario = repositorioVeterinario.GetVeterinarioPorId(veterinarioId.Value);
+            }
+            else
+            {
+                Veterinario = new Veterinario();
+            }
+            if (Veterinario == null)
             {
                 return RedirectToPage("./NotFound");
             }
             else
-            return Page();
+                return Page();
 
+        }
+
+        public IActionResult OnPost()
+        {
+            if (Veterinario.Id>0)
+            {
+                Veterinario = repositorioVeterinario.Update(Veterinario);
+            }
+            else
+            {
+                repositorioVeterinario.Add(Veterinario);
+            }
+            return Page();
         }
     }
 }

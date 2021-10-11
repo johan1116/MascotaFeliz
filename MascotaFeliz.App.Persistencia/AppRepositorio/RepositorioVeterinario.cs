@@ -6,7 +6,7 @@ namespace MascotaFeliz.App.Persistencia.AppRepositorios
 {
     public class RepositorioVeterinario : IRepositorioVeterinario
     {
-       static public List<Veterinario> veterinarios;
+        static public List<Veterinario> veterinarios;
         public RepositorioVeterinario()
         {
             veterinarios = new List<Veterinario>()
@@ -28,6 +28,27 @@ namespace MascotaFeliz.App.Persistencia.AppRepositorios
         public Veterinario GetVeterinarioPorId(int veterinarioID)
         {
             return veterinarios.SingleOrDefault(ve => ve.Id == veterinarioID);
+        }
+
+        public Veterinario Update(Veterinario veterinarioActualizado)
+        {
+            var veterinario = veterinarios.SingleOrDefault(vr => vr.Id == veterinarioActualizado.Id);
+            if (veterinario != null)
+            {
+                veterinario.Documento = veterinarioActualizado.Documento;
+                veterinario.Nombre = veterinarioActualizado.Nombre; 
+                veterinario.Apellidos = veterinarioActualizado.Apellidos;
+                veterinario.Telefono = veterinarioActualizado.Telefono;
+                veterinario.TarjetaProfesional = veterinarioActualizado.TarjetaProfesional;
+            }
+            return veterinario;
+        }
+
+        public Veterinario Add(Veterinario nuevoVeterinario)
+        {
+            nuevoVeterinario.Id = veterinarios.Max(nv => nv.Id)+1;
+            veterinarios.Add(nuevoVeterinario);
+            return nuevoVeterinario;
         }
     }
 }

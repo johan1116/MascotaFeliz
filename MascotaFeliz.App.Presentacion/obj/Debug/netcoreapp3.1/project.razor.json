@@ -14492,8 +14492,18 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\MascotaFeliz\\MascotaFeliz.App\\MascotaFeliz.App.Presentacion\\Pages\\CMascota\\DetailsMascota.cshtml",
+      "TargetPath": "Pages\\CMascota\\DetailsMascota.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\MascotaFeliz\\MascotaFeliz.App\\MascotaFeliz.App.Presentacion\\Pages\\Propietario\\EditPropietario.cshtml",
       "TargetPath": "Pages\\Propietario\\EditPropietario.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\MascotaFeliz\\MascotaFeliz.App\\MascotaFeliz.App.Presentacion\\Pages\\CMascota\\EditMascota.cshtml",
+      "TargetPath": "Pages\\CMascota\\EditMascota.cshtml",
       "FileKind": "mvc"
     },
     {

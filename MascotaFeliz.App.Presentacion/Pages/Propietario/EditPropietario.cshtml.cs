@@ -12,23 +12,45 @@ namespace MascotaFeliz.App.Presentacion.Pages
     public class EditPropietarioModel : PageModel
     {
         private readonly IRepositorioPropietarios repositorioPropietarios;
-
-        public PropietarioMascota PropietarioMascotas{get;set;}
+        [BindProperty]
+        public PropietarioMascota PropietarioMascotas { get; set; }
 
         public EditPropietarioModel(IRepositorioPropietarios repositorioPropietarios)
         {
             this.repositorioPropietarios = repositorioPropietarios;
         }
-        public IActionResult OnGet(int propietariomascotasId)
+        public IActionResult OnGet(int? propietariomascotasId)
         {
-            PropietarioMascotas = repositorioPropietarios.GetPropietariomascotaPorId(propietariomascotasId);
+            if (propietariomascotasId.HasValue)
+            {
+                PropietarioMascotas = repositorioPropietarios.GetPropietariomascotaPorId(propietariomascotasId.Value);
+            }
+            else
+            {
+                PropietarioMascotas = new PropietarioMascota();
+            }
             if (PropietarioMascotas == null)
             {
                 return RedirectToPage("./NotFound");
             }
             else
-            return Page();
-    
+                return Page();
+
         }
+
+        public IActionResult OnPost()
+        {
+            if (PropietarioMascotas.Id>0)
+            {
+                PropietarioMascotas = repositorioPropietarios.Update(PropietarioMascotas);
+            }
+            else
+            {
+                repositorioPropietarios.Add(PropietarioMascotas);
+            }
+            return Page();
+        }
+
+
     }
 }

@@ -13,7 +13,7 @@ namespace MascotaFeliz.App.Presentacion.Pages
     {
 
         private readonly IRepositorioVisitas repositorioVisitas;
-
+        [BindProperty]
         public IEnumerable<VisitaDomiciliaria> VisitaDomiciliaria { get; set; }
 
         public List1Model(IRepositorioVisitas repositorioVisitas)

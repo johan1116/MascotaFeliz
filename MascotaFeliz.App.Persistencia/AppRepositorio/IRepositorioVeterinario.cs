@@ -11,5 +11,9 @@ namespace MascotaFeliz.App.Persistencia.AppRepositorios
 
         Veterinario GetVeterinarioPorId(int veterinarioID);
 
+        Veterinario Update (Veterinario veterinarioActualizado);
+
+        Veterinario Add (Veterinario nuevoVeterinario);
+
     }
 }

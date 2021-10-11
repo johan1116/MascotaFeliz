@@ -44,14 +44,21 @@
             <td>
                 @Mascota.TipoMascota
             </td>
-            @* <td>
-                <a class="btn btn-primary table-btn" asp-page="./Details" asp-route-propietariomascotasId="@Mascota.Id">
-                    <i class="fas  fa-info-circle"></i>
-                    Detalles Propietario
+            <td>
+                <a class="btn btn-primary table-btn" asp-page="./DetailsMascota" asp-route-mascotaId="@Mascota.Id">
+                    <i class="fas  fa-info-circle fa-lg"></i>
+                    Detalles Mascota
                 </a>
 
-            </td> *@
+            </td>
+            <td>
+                <a class="btn btn-primary table-btn" asp-page="./EditMascota" asp-route-mascotaId="@Mascota.Id">
+                    <i class="fas  fa-address-book fa-lg" aria-hidden="true"></i>
+                    Editar Mascota
+                </a>
+            </td>
         </tr>
     }
 
 </table>
+<a asp-page =".\EditMascota" class="bnt btn-primary">Adicionar Mascota</a>

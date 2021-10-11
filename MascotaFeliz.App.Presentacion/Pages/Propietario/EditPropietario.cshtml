@@ -6,6 +6,11 @@
 <form method="post">
     <input type="hidden" asp-for="PropietarioMascotas.Id" />
     <div class="form-group">
+        <label asp-for="PropietarioMascotas.Documento"></label>
+        <input asp-for="PropietarioMascotas.Documento" class="for-control">
+        <span class="text-danger" asp-validation-for="PropietarioMascotas.Documento"></span>
+    </div>
+    <div class="form-group">
         <label asp-for="PropietarioMascotas.Nombre"></label>
         <input asp-for="PropietarioMascotas.Nombre" class="for-control">
         <span class="text-danger" asp-validation-for="PropietarioMascotas.Nombre"></span>

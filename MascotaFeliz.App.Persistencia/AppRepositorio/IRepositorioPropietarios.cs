@@ -11,5 +11,9 @@ namespace MascotaFeliz.App.Persistencia.AppRepositorios
 
         PropietarioMascota GetPropietariomascotaPorId(int propietariomascotasID);
 
+        PropietarioMascota Update (PropietarioMascota propietarioActualizado);
+
+        PropietarioMascota Add(PropietarioMascota nuevoPropietario);
+
     }
 }

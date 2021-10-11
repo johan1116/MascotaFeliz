@@ -18,9 +18,16 @@ namespace MascotaFeliz.App.Presentacion.Pages
         {
             this.repositorioVisitas = repositorioVisitas;
         }
-        public IActionResult OnGet(int visitadomiciliariaId)
+        public IActionResult OnGet(int? visitadomiciliariaId)
         {
-            VisitaDomiciliaria = repositorioVisitas.GetVisitadomiciliariaPorId(visitadomiciliariaId);
+            if (visitadomiciliariaId.HasValue)
+            {
+                VisitaDomiciliaria = repositorioVisitas.GetVisitadomiciliariaPorId(visitadomiciliariaId.Value);
+            }
+            else
+            {
+                VisitaDomiciliaria = new VisitaDomiciliaria();
+            }
             if (VisitaDomiciliaria == null)
             {
                 return RedirectToPage("./NotFound");
@@ -28,6 +35,19 @@ namespace MascotaFeliz.App.Presentacion.Pages
             else
                 return Page();
 
+        }
+
+        public IActionResult OnPost()
+        {
+            if (VisitaDomiciliaria.Id>0)
+            {
+                VisitaDomiciliaria = repositorioVisitas.Update(VisitaDomiciliaria);
+            }
+            else
+            {
+                repositorioVisitas.Add(VisitaDomiciliaria);
+            }
+            return Page();
         }
 
     }
