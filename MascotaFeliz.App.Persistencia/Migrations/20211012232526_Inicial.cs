@@ -13,6 +13,7 @@ namespace MascotaFeliz.App.Persistencia.Migrations
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
+                    Documento = table.Column<int>(type: "int", nullable: false),
                     Nombre = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     Apellidos = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     Telefono = table.Column<string>(type: "nvarchar(max)", nullable: true),
@@ -56,7 +57,7 @@ namespace MascotaFeliz.App.Persistencia.Migrations
                     VeterinarioId = table.Column<int>(type: "int", nullable: true),
                     MascotaId = table.Column<int>(type: "int", nullable: true),
                     FechaHora = table.Column<DateTime>(type: "datetime2", nullable: false),
-                    IdProfesional = table.Column<int>(type: "int", nullable: false),
+                    IdProfesionalId = table.Column<int>(type: "int", nullable: true),
                     Temperatura = table.Column<float>(type: "real", nullable: false),
                     Peso = table.Column<float>(type: "real", nullable: false),
                     FRespiratoria = table.Column<float>(type: "real", nullable: false),
@@ -74,6 +75,12 @@ namespace MascotaFeliz.App.Persistencia.Migrations
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Restrict);
                     table.ForeignKey(
+                        name: "FK_VisitaDomiciliaria_Persona_IdProfesionalId",
+                        column: x => x.IdProfesionalId,
+                        principalTable: "Persona",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Restrict);
+                    table.ForeignKey(
                         name: "FK_VisitaDomiciliaria_Persona_VeterinarioId",
                         column: x => x.VeterinarioId,
                         principalTable: "Persona",
@@ -85,6 +92,11 @@ namespace MascotaFeliz.App.Persistencia.Migrations
                 name: "IX_Mascota_PropietarioMascotaId",
                 table: "Mascota",
                 column: "PropietarioMascotaId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_VisitaDomiciliaria_IdProfesionalId",
+                table: "VisitaDomiciliaria",
+                column: "IdProfesionalId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_VisitaDomiciliaria_MascotaId",
