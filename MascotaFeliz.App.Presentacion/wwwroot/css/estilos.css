@@ -11,6 +11,10 @@
   box-sizing: border-box;
 }
 
+a {
+  color: rgba(68, 150, 99, 0.938);
+}
+
 .framework {
   font-family: 'Roboto';
   background: white;
@@ -52,7 +56,7 @@
 .logo {
   text-align: center;
   font-size: 1.2cm;
-  color: #fff;
+  color: rgb(0, 0, 0);
 }
 
 .logo span {
@@ -210,7 +214,7 @@ input:focus~.barra::before {
 }
 
 
-button {
+.buttonbonito {
   font-family: 'roboto';
   background: #7ad653;
   /* fallback for old browsers */
@@ -264,6 +268,7 @@ button {
 .info img {
   text-align: center;
   margin: 0 0 1rem 0;
+  color: rgba(255, 255, 255, 0.8);
 }
 
 .info h4 {
@@ -312,6 +317,7 @@ height:23px;*/
 .info1 .Yotta {
   text-align: center;
   margin: 3rem 0 3rem 0;
+  color: rgba(255, 255, 255, 0.8);
 }
 
 .info1 h4 {

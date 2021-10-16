@@ -8,13 +8,20 @@ for details on configuring this project to bundle and minify static web assets. 
 
 a.navbar-brand {
   white-space: normal;
-  text-align: center;
-  word-break: break-all;
+  color: rgba(68, 150, 99, 0.938);
+
+  
+}
+
+
+/*SIRVE PARA PONER EL ICONO*/
+.navbar-toggler-icon{
+  color: rgba(68, 150, 99, 0.938);
 }
 
 /* Provide sufficient contrast against white background */
 a {
-  color: rgba(6, 49, 236, 0.938);
+  color: rgba(68, 150, 99, 0.938);
 }
 
 .btn-primary {

@@ -150,7 +150,6 @@ C:\MascotaFeliz V1\MascotaFeliz\MascotaFeliz.App.Presentacion\obj\Debug\netcorea
 C:\MascotaFeliz V1\MascotaFeliz\MascotaFeliz.App.Presentacion\obj\Debug\netcoreapp3.1\MascotaFeliz.App.Presentacion.RazorCoreGenerate.cache
 C:\MascotaFeliz V1\MascotaFeliz\MascotaFeliz.App.Presentacion\obj\Debug\netcoreapp3.1\Razor\Pages\Error.cshtml.g.cs
 C:\MascotaFeliz V1\MascotaFeliz\MascotaFeliz.App.Presentacion\obj\Debug\netcoreapp3.1\Razor\Pages\Index.cshtml.g.cs
-C:\MascotaFeliz V1\MascotaFeliz\MascotaFeliz.App.Presentacion\obj\Debug\netcoreapp3.1\Razor\Pages\Privacy.cshtml.g.cs
 C:\MascotaFeliz V1\MascotaFeliz\MascotaFeliz.App.Presentacion\obj\Debug\netcoreapp3.1\Razor\Pages\Propietario\List.cshtml.g.cs
 C:\MascotaFeliz V1\MascotaFeliz\MascotaFeliz.App.Presentacion\obj\Debug\netcoreapp3.1\Razor\Pages\Shared\_Layout.cshtml.g.cs
 C:\MascotaFeliz V1\MascotaFeliz\MascotaFeliz.App.Presentacion\obj\Debug\netcoreapp3.1\Razor\Pages\Shared\_ValidationScriptsPartial.cshtml.g.cs
@@ -249,18 +248,12 @@ C:\MascotaFelizV1\MascotaFeliz\MascotaFeliz.App.Presentacion\obj\Debug\netcoreap
 C:\MascotaFelizV1\MascotaFeliz\MascotaFeliz.App.Presentacion\obj\Debug\netcoreapp3.1\MascotaFeliz.App.Presentacion.genruntimeconfig.cache
 >>>>>>> 81d68861ba95b3e54f5abd9d50c75ae55d8cf671
 C:\MascotaFeliz\MascotaFeliz.App\MascotaFeliz.App.Presentacion\obj\Debug\netcoreapp3.1\Razor\Pages\Visita\List1.cshtml.g.cs
-C:\MascotaFeliz V1\MascotaFeliz\MascotaFeliz.App.Presentacion\obj\Debug\netcoreapp3.1\Razor\Pages\FormularioPropietario\Formulario2.cshtml.g.cs
-C:\MascotaFeliz V1\MascotaFeliz\MascotaFeliz.App.Presentacion\obj\Debug\netcoreapp3.1\Razor\Pages\FormularioVisita\Formulario1.cshtml.g.cs
 C:\MascotaFeliz\MascotaFeliz.App\MascotaFeliz.App.Presentacion\obj\Debug\netcoreapp3.1\Razor\Pages\FormularioPropietario\Formulario2.cshtml.g.cs
 C:\MascotaFeliz\MascotaFeliz.App\MascotaFeliz.App.Presentacion\obj\Debug\netcoreapp3.1\Razor\Pages\FormularioVisita\Formulario1.cshtml.g.cs
 C:\MascotaFeliz\MascotaFeliz.App\MascotaFeliz.App.Presentacion\obj\Debug\netcoreapp3.1\Razor\Pages\Propietario\Details.cshtml.g.cs
 C:\MascotaFeliz\MascotaFeliz.App\MascotaFeliz.App.Presentacion\obj\Debug\netcoreapp3.1\Razor\Pages\Visita\DetailsVisita.cshtml.g.cs
-C:\MascotaFeliz V1\MascotaFeliz\MascotaFeliz.App.Presentacion\obj\Debug\netcoreapp3.1\Razor\Pages\Mascota\ListMascota.cshtml.g.cs
 C:\MascotaFeliz V1\MascotaFeliz\MascotaFeliz.App.Presentacion\obj\Debug\netcoreapp3.1\Razor\Pages\Propietario\Details.cshtml.g.cs
-C:\MascotaFeliz V1\MascotaFeliz\MascotaFeliz.App.Presentacion\obj\Debug\netcoreapp3.1\Razor\Pages\Veterinario\ListVeterinario.cshtml.g.cs
 C:\MascotaFeliz V1\MascotaFeliz\MascotaFeliz.App.Presentacion\obj\Debug\netcoreapp3.1\Razor\Pages\Visita\DetailsVisita.cshtml.g.cs
-C:\MascotaFeliz V1\MascotaFeliz\MascotaFeliz.App.Presentacion\obj\Debug\netcoreapp3.1\Razor\Pages\FormularioMascota\Formulario3.cshtml.g.cs
-C:\MascotaFeliz V1\MascotaFeliz\MascotaFeliz.App.Presentacion\obj\Debug\netcoreapp3.1\Razor\Pages\FormularioVeterinario\Formulario4.cshtml.g.cs
 C:\MascotaFeliz\MascotaFeliz.App\MascotaFeliz.App.Presentacion\obj\Debug\netcoreapp3.1\Razor\Pages\CMascota\ListMascota.cshtml.g.cs
 C:\MascotaFeliz\MascotaFeliz.App\MascotaFeliz.App.Presentacion\obj\Debug\netcoreapp3.1\Razor\Pages\CVeterinario\DetailsVeterinario.cshtml.g.cs
 C:\MascotaFeliz\MascotaFeliz.App\MascotaFeliz.App.Presentacion\obj\Debug\netcoreapp3.1\Razor\Pages\CVeterinario\EditVeterinario.cshtml.g.cs
@@ -275,3 +268,16 @@ C:\MascotaFeliz\MascotaFeliz.App\MascotaFeliz.App.Presentacion\obj\Debug\netcore
 C:\MascotaFeliz\MascotaFeliz.App\MascotaFeliz.App.Presentacion\obj\Debug\netcoreapp3.1\Razor\Pages\Propietario\DeletePropietario.cshtml.g.cs
 C:\MascotaFeliz\MascotaFeliz.App\MascotaFeliz.App.Presentacion\obj\Debug\netcoreapp3.1\Razor\Pages\CVeterinario\DeleteVeterinario.cshtml.g.cs
 C:\MascotaFeliz\MascotaFeliz.App\MascotaFeliz.App.Presentacion\obj\Debug\netcoreapp3.1\Razor\Pages\Visita\DeleteVisita.cshtml.g.cs
+C:\MascotaFeliz V1\MascotaFeliz\MascotaFeliz.App.Presentacion\obj\Debug\netcoreapp3.1\Razor\Pages\CMascota\DeleteMascota.cshtml.g.cs
+C:\MascotaFeliz V1\MascotaFeliz\MascotaFeliz.App.Presentacion\obj\Debug\netcoreapp3.1\Razor\Pages\CMascota\DetailsMascota.cshtml.g.cs
+C:\MascotaFeliz V1\MascotaFeliz\MascotaFeliz.App.Presentacion\obj\Debug\netcoreapp3.1\Razor\Pages\CMascota\EditMascota.cshtml.g.cs
+C:\MascotaFeliz V1\MascotaFeliz\MascotaFeliz.App.Presentacion\obj\Debug\netcoreapp3.1\Razor\Pages\CMascota\ListMascota.cshtml.g.cs
+C:\MascotaFeliz V1\MascotaFeliz\MascotaFeliz.App.Presentacion\obj\Debug\netcoreapp3.1\Razor\Pages\CVeterinario\DeleteVeterinario.cshtml.g.cs
+C:\MascotaFeliz V1\MascotaFeliz\MascotaFeliz.App.Presentacion\obj\Debug\netcoreapp3.1\Razor\Pages\CVeterinario\DetailsVeterinario.cshtml.g.cs
+C:\MascotaFeliz V1\MascotaFeliz\MascotaFeliz.App.Presentacion\obj\Debug\netcoreapp3.1\Razor\Pages\CVeterinario\EditVeterinario.cshtml.g.cs
+C:\MascotaFeliz V1\MascotaFeliz\MascotaFeliz.App.Presentacion\obj\Debug\netcoreapp3.1\Razor\Pages\CVeterinario\ListVeterinario.cshtml.g.cs
+C:\MascotaFeliz V1\MascotaFeliz\MascotaFeliz.App.Presentacion\obj\Debug\netcoreapp3.1\Razor\Pages\Propietario\DeletePropietario.cshtml.g.cs
+C:\MascotaFeliz V1\MascotaFeliz\MascotaFeliz.App.Presentacion\obj\Debug\netcoreapp3.1\Razor\Pages\Propietario\EditPropietario.cshtml.g.cs
+C:\MascotaFeliz V1\MascotaFeliz\MascotaFeliz.App.Presentacion\obj\Debug\netcoreapp3.1\Razor\Pages\Visita\DeleteVisita.cshtml.g.cs
+C:\MascotaFeliz V1\MascotaFeliz\MascotaFeliz.App.Presentacion\obj\Debug\netcoreapp3.1\Razor\Pages\Visita\EditVisita.cshtml.g.cs
+C:\MascotaFeliz V1\MascotaFeliz\MascotaFeliz.App.Presentacion\obj\Debug\netcoreapp3.1\Razor\Pages\Servicios.cshtml.g.cs
