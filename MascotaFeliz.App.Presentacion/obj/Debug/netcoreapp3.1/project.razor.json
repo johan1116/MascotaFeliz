@@ -14412,11 +14412,6 @@
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\MascotaFeliz\\MascotaFeliz.App\\MascotaFeliz.App.Presentacion\\Pages\\FormularioMascota\\Formulario3.cshtml",
-      "TargetPath": "Pages\\FormularioMascota\\Formulario3.cshtml",
-      "FileKind": "mvc"
-    },
-    {
       "FilePath": "c:\\MascotaFeliz\\MascotaFeliz.App\\MascotaFeliz.App.Presentacion\\Pages\\CVeterinario\\ListVeterinario.cshtml",
       "TargetPath": "Pages\\CVeterinario\\ListVeterinario.cshtml",
       "FileKind": "mvc"
@@ -14427,11 +14422,6 @@
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\MascotaFeliz\\MascotaFeliz.App\\MascotaFeliz.App.Presentacion\\Pages\\FormularioPropietario\\Formulario2.cshtml",
-      "TargetPath": "Pages\\FormularioPropietario\\Formulario2.cshtml",
-      "FileKind": "mvc"
-    },
-    {
       "FilePath": "c:\\MascotaFeliz\\MascotaFeliz.App\\MascotaFeliz.App.Presentacion\\Pages\\Visita\\EditVisita.cshtml",
       "TargetPath": "Pages\\Visita\\EditVisita.cshtml",
       "FileKind": "mvc"
@@ -14439,11 +14429,6 @@
     {
       "FilePath": "c:\\MascotaFeliz\\MascotaFeliz.App\\MascotaFeliz.App.Presentacion\\Pages\\CMascota\\DeleteMascota.cshtml",
       "TargetPath": "Pages\\CMascota\\DeleteMascota.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\MascotaFeliz\\MascotaFeliz.App\\MascotaFeliz.App.Presentacion\\Pages\\FormularioVisita\\Formulario1.cshtml",
-      "TargetPath": "Pages\\FormularioVisita\\Formulario1.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -14524,11 +14509,6 @@
     {
       "FilePath": "c:\\MascotaFeliz\\MascotaFeliz.App\\MascotaFeliz.App.Presentacion\\Pages\\CMascota\\EditMascota.cshtml",
       "TargetPath": "Pages\\CMascota\\EditMascota.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\MascotaFeliz\\MascotaFeliz.App\\MascotaFeliz.App.Presentacion\\Pages\\FormularioVeterinario\\Formulario4.cshtml",
-      "TargetPath": "Pages\\FormularioVeterinario\\Formulario4.cshtml",
       "FileKind": "mvc"
     },
     {

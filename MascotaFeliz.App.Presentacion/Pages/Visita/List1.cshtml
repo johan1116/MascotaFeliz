@@ -2,105 +2,95 @@
 @model MascotaFeliz.App.Presentacion.Pages.List1Model
 @{
 }
+<h1>Formulario Visita Domiciliaria</h1>
+<table class="table">
 
-<div>
-    <h1>Formulario Visita Domiciliaria</h1>
-    <table class="table">
+    <colgroup>
+        <col style="background-color: rgba(14, 221, 248, 0.397);">
+        <col style="background-color: rgba(120, 250, 178, 0.452);">
+        <col style="background-color: rgba(14, 221, 248, 0.397);">
+        <col style="background-color: rgba(120, 250, 178, 0.452);">
+        <col style="background-color: rgba(14, 221, 248, 0.397);">
+        <col style="background-color: rgba(120, 250, 178, 0.452);">
+        <col style="background-color: rgba(14, 221, 248, 0.397);">
+        <col style="background-color: rgba(120, 250, 178, 0.452);">
+        <col style="background-color: rgba(14, 221, 248, 0.397);">
+        
+        
 
-        <colgroup>
-            <col style="background-color: rgba(14, 221, 248, 0.397);">
-            <col style="background-color: rgba(120, 250, 178, 0.452);">
-            <col style="background-color: rgba(14, 221, 248, 0.397);">
-            <col style="background-color: rgba(120, 250, 178, 0.452);">
-            <col style="background-color: rgba(14, 221, 248, 0.397);">
-            <col style="background-color: rgba(120, 250, 178, 0.452);">
-            <col style="background-color: rgba(14, 221, 248, 0.397);">
-            @* <col style="background-color: rgba(120, 250, 178, 0.452);">
-                <col style="background-color: rgba(14, 221, 248, 0.397);">
-                <col style="background-color: rgba(120, 250, 178, 0.452);"> *@
+    </colgroup>
 
+    <caption><b>Listado Visita Domiciliaria</b></caption>
 
-        </colgroup>
+    <thead>
+        <tr>
+            
+            <td>Veterinario</td>
+            <td>Mascota</td>
+            <td>Fecha de la Visita Domiciliaria</td>
+            <td>Temperatura (°C)</td>
+            <td>Masa Corporal (Kg)</td>
+            <td>Frecuencia Respiratoria (rpm)</td>
+            <td>Frecuencia Cardiaca (lat/min)</td>
+            <td>Estado de Ánimo </td>
+            <td>Recomendaciones</td>
+        </tr>
+    </thead>
+    @foreach (var Visita in Model.VisitaDomiciliaria)
+    {
+        <tr>
+            <td>
+                @Visita.Veterinario
+            </td>
+            <td>
+                @Visita.Mascota
+            </td>
+            <td>
+                @Visita.FechaHora
+            </td>
+            <td>
+                @Visita.Temperatura
+            </td>
 
-        <caption><b>Listado Visita Domiciliaria</b></caption>
+            <td>
+                @Visita.Peso
+            </td>
 
-        <thead>
-            <tr>
+            <td>
+                @Visita.FRespiratoria
+            </td>
 
-                @* <td>Veterinario</td>
-                    <td>Mascota</td> *@
-                <td>Fecha de la Visita Domiciliaria</td>
-                @* <td>Tarjeta Profesional</td> *@
-                <td>Temperatura (°C)</td>
-                <td>Masa Corporal (Kg)</td>
-                <td>Frecuencia Respiratoria (rpm)</td>
-                <td>Frecuencia Cardiaca (lat/min)</td>
-                <td>Estado de Ánimo </td>
-                <td>Recomendaciones</td>
-            </tr>
-        </thead>
-        @foreach (var Visita in Model.VisitaDomiciliaria)
-        {
-            <tr>
-                @* <td>
-                    @Visita.Veterinario.Nombre
-                    </td> *@
-                @* <td>
-                    @Visita.Mascota.NombreMascota
-                    </td> *@
-                <td>
-                    @Visita.FechaHora
-                </td>
-                @* <td>
-                    @Visita.IdProfesional.TarjetaProfesional
-                    </td> *@
-                <td>
-                    @Visita.Temperatura
-                </td>
+            <td>
+                @Visita.FCardiaca
+            </td>
 
-                <td>
-                    @Visita.Peso
-                </td>
+            <td>
+                @Visita.EstadoAnimo
+            </td>
 
-                <td>
-                    @Visita.FRespiratoria
-                </td>
+            <td>
+                @Visita.Recomendacion
+            </td>
+            <td>
+                <a class="btn btn-primary table-btn" asp-page="./DetailsVisita" asp-route-visitadomiciliariaId="@Visita.Id">
+                    <i class="fas  fa-info-circle"></i>
+                    Detalles Visita Domiciliaria
+                </a>
+            </td>
+            <td>
+                <a class="btn btn-primary table-btn" asp-page="./EditVisita" asp-route-visitadomiciliariaId="@Visita.Id">
+                    <i class="fas  fa-address-book fa-lg" aria-hidden="true"></i>
+                    Editar Visita
+                </a>
+            </td>
+            <td>
+                <a class="btn btn-primary table-btn" asp-page="./DeleteVisita" asp-route-visitadomiciliariaId="@Visita.Id">
+                    <i class="fas  fa-address-book fa-lg" aria-hidden="true"></i>
+                    Eliminar Visita
+                </a>
+            </td>
+        </tr>
+    }
 
-                <td>
-                    @Visita.FCardiaca
-                </td>
-
-                <td>
-                    @Visita.EstadoAnimo
-                </td>
-
-                <td>
-                    @Visita.Recomendacion
-                </td>
-                <td>
-                    <a class="btn btn-primary table-btn" asp-page="./DetailsVisita"
-                    asp-route-visitadomiciliariaId="@Visita.Id">
-                        <i class="fas  fa-info-circle"></i>
-                        Detalles Visita Domiciliaria
-                    </a>
-                </td>
-                <td>
-                    <a class="btn btn-primary table-btn" asp-page="./EditVisita"
-                    asp-route-visitadomiciliariaId="@Visita.Id">
-                        <i class="fas  fa-address-book fa-lg" aria-hidden="true"></i>
-                        Editar Visita
-                    </a>
-                </td>
-                <td>
-                    <a class="btn btn-primary table-btn" asp-page="./DeleteVisita"
-                    asp-route-visitadomiciliariaId="@Visita.Id">
-                        <i class="fas  fa-address-book fa-lg" aria-hidden="true"></i>
-                        Eliminar Visita
-                    </a>
-                </td>
-            </tr>
-        }
-
-    </table>
-    <a asp-page=".\EditVisita" class="bnt btn-primary">Adicionar Visita</a>
-</div>
+</table>
+<a asp-page =".\EditVisita" class="bnt btn-primary">Adicionar Visita</a>

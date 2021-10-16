@@ -2,44 +2,119 @@
 @model MascotaFeliz.App.Presentacion.Pages.DeleteVisitaModel
 @{
 }
-<h2>Eliminar Visita:@Model.VisitaDomiciliaria.Recomendacion</h2>
-<form method="post">
-    <input type="hidden" asp-for="VisitaDomiciliaria.Id"/>
-    <div class="form-group">
-        <label asp-for="VisitaDomiciliaria.FechaHora"></label>
-        <input asp-for ="VisitaDomiciliaria.FechaHora" class="for-control">
-        <span class="text-danger" asp-validation-for="VisitaDomiciliaria.FechaHora"></span>
+<div class="framework">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Registro Visita</title>
+
+        <link rel="stylesheet" href="estilos.css">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <!-- <link rel="stylesheet" href="~/css/site.css" /> -->
+        <link rel="stylesheet" href="~/css/estilos.css" />
+
+    </head>
+
+    <div>
+        <div class="fondo">
+            <div class="Encabezado">
+                <img class="imagen1" src="~/imagen/pet4.png">
+                <h1 class="logo"> Mundo <span>Paticas</span> </h1>
+            </div>
+            <div class="contenido">
+
+                <form action="" method="POST" id="form1">
+                    <input type="hidden" asp-for="VisitaDomiciliaria.Id"/>
+                    <h1>Visita Domiciliaria</h1>
+                    <div class="form">
+                        <div class="grupo">
+                            <input  id="veterinario" asp-for ="VisitaDomiciliaria.Veterinario" >
+                            <span class="barra" asp-validation-for="VisitaDomiciliaria.Veterinario"></span>
+                            <label for="">Veterinario </label>
+                        </div>
+                        <div class="grupo">
+                            <input  id="mascota" asp-for ="VisitaDomiciliaria.Mascota" >
+                            <span class="barra" asp-validation-for="VisitaDomiciliaria.Mascota"></span>
+                            <label for="">Mascota </label>
+                        </div>
+                        <div class="grupo">
+                            <input type="date" id="fecha" asp-for ="VisitaDomiciliaria.FechaHora" required>
+                            <span class="barra" asp-validation-for="VisitaDomiciliaria.FechaHora"></span>
+                        </div>
+                        <div class="grupo">
+                            <input inputmode="numeric"  id="peso" asp-for ="VisitaDomiciliaria.Peso" required>
+                            <span class="barra" asp-validation-for="VisitaDomiciliaria.Peso"></span>
+                            <label for="">Peso de la mascota</label>
+                        </div>
+                        <div class="grupo">
+                            <input  id="temperatura" asp-for ="VisitaDomiciliaria.Temperatura" required>
+                            <span class="barra" asp-validation-for="VisitaDomiciliaria.Temperatura"></span>
+                            <label for="">Temperatura en grados</label>
+                        </div>
+                        <div class="grupo">
+                            <select asp-for ="VisitaDomiciliaria.EstadoAnimo" name="menu" required>
+                                <option value="0">Estado de ánimo</option>
+                                <option value="Bueno">Bueno</option>
+                                <option value="Regular">Regular</option>
+                                <option value="Malo">Malo</option>
+                            </select>
+                        </div>
+
+                        <div class="grupo">
+                            <input id="frcar" asp-for ="VisitaDomiciliaria.FCardiaca" required>
+                            <span class="barra" asp-validation-for="VisitaDomiciliaria.FCardiaca"></span>
+                            <label for="">Frecuencia cardiaca</label>
+                        </div>
+                        <div class="grupo">
+                            <input  id="frres" asp-for ="VisitaDomiciliaria.FRespiratoria" required>
+                            <span class="barra" asp-validation-for="VisitaDomiciliaria.FRespiratoria"></span>
+                            <label for="">Frecuencia respitatoria</label>
+                        </div>
+                        <div class="bloque1">
+                            <textarea  asp-for ="VisitaDomiciliaria.Recomendacion" rows="4" required></textarea>
+                            <span class="barra" asp-validation-for="VisitaDomiciliaria.Recomendacion"></span>
+                        </div>
+
+                        <div class="bloque">
+                            <button type="submit">Eliminar</button>
+                            <a asp-page ="./List1" class="button2">Lista de Visitas</a>
+                        </div>
+                            
+
+                    </div>
+                </form>
+                <div class="info1">
+                    <h4><b>Mayor Información</b></h4>
+                    <ul>
+
+                        <li> <i class="material-icons">location_on</i> Avenida Esperanza N° 26-16 </li>
+                        <li> <i class="material-icons">call</i> 601 - 8641223 </li>
+                        <li> <i class="material-icons">mail</i> mundopaticas@gmail.com </li>
+                        <li><i class="material-icons">whatsapp</i> +57 3132256147</li>
+                        <li><i class="material-icons">facebook</i> <a href="https://www.facebook.com"
+                                target="_blank">Mundo
+                                Paticas</a> </li>
+
+
+                    </ul>
+                    <p>
+                        Somos una empresa especializada <br> en el cuidado de tu mascota.<br>
+                        Ofrecemos una amplia gama de servicios <br> de alta calidad y
+                        experiencia <br> confortable para ti y tu peludito.<br>
+                    </p>
+
+                    <p class="Yotta">Elaborado por</p>
+                    <img class="imagen2" src="~/imagen/yota1.png">
+
+
+
+                </div>
+
+            </div>
+
+        </div>
+
     </div>
-    <div class="form-group">
-        <label asp-for="VisitaDomiciliaria.Temperatura"></label>
-        <input asp-for ="VisitaDomiciliaria.Temperatura" class="for-control">
-        <span class="text-danger" asp-validation-for="VisitaDomiciliaria.Temperatura"></span>
-    </div>
-    <div class="form-group">
-        <label asp-for="VisitaDomiciliaria.Peso"></label>
-        <input asp-for ="VisitaDomiciliaria.Peso" class="for-control">
-        <span class="text-danger" asp-validation-for="VisitaDomiciliaria.Peso"></span>
-    </div>
-    <div class="form-group">
-        <label asp-for="VisitaDomiciliaria.FRespiratoria"></label>
-        <input asp-for ="VisitaDomiciliaria.FRespiratoria" class="for-control">
-        <span class="text-danger" asp-validation-for="VisitaDomiciliaria.FRespiratoria"></span>
-    </div>
-    <div class="form-group">
-        <label asp-for="VisitaDomiciliaria.FCardiaca"></label>
-        <input asp-for ="VisitaDomiciliaria.FCardiaca" class="for-control">
-        <span class="text-danger" asp-validation-for="VisitaDomiciliaria.FCardiaca"></span>
-    </div>
-    <div class="form-group">
-        <label asp-for="VisitaDomiciliaria.EstadoAnimo"></label>
-        <input asp-for ="VisitaDomiciliaria.EstadoAnimo" class="for-control">
-        <span class="text-danger" asp-validation-for="VisitaDomiciliaria.EstadoAnimo"></span>
-    </div>
-    <div class="form-group">
-        <label asp-for="VisitaDomiciliaria.Recomendacion"></label>
-        <input asp-for ="VisitaDomiciliaria.Recomendacion" class="for-control">
-        <span class="text-danger" asp-validation-for="VisitaDomiciliaria.Recomendacion"></span>
-    </div>
-    <button type="submit" class="btn btn-primary">Eliminar</button>
-</form>
-<a asp-page ="./List1" class="btn-default">Lista de Visitas</a>
+</div>
