@@ -13,10 +13,10 @@
         <col style="background-color: rgba(14, 221, 248, 0.397);">
         <col style="background-color: rgba(120, 250, 178, 0.452);">
         <col style="background-color: rgba(14, 221, 248, 0.397);">
-        <col style="background-color: rgba(120, 250, 178, 0.452);">
-        @* <col style="background-color: rgba(14, 221, 248, 0.397);">
-        <col style="background-color: rgba(120, 250, 178, 0.452);">
-        <col style="background-color: rgba(14, 221, 248, 0.397);"> *@
+        @* <col style="background-color: rgba(120, 250, 178, 0.452);">
+        <col style="background-color: rgba(14, 221, 248, 0.397);">
+        <col style="background-color: rgba(120, 250, 178, 0.452);"> *@
+        
 
     </colgroup>
 
@@ -24,7 +24,7 @@
 
     <thead>
         <tr>
-            <td>Id Visita</td>
+            
             @* <td>Veterinario</td>
             <td>Mascota</td> *@
             <td>Fecha de la Visita Domiciliaria</td>
@@ -40,9 +40,6 @@
     @foreach (var Visita in Model.VisitaDomiciliaria)
     {
         <tr>
-            <td>
-                @Visita.Id
-            </td>
             @* <td>
                 @Visita.Veterinario.Nombre
             </td> *@
@@ -90,7 +87,12 @@
                     Editar Visita
                 </a>
             </td>
-
+            <td>
+                <a class="btn btn-primary table-btn" asp-page="./DeleteVisita" asp-route-visitadomiciliariaId="@Visita.Id">
+                    <i class="fas  fa-address-book fa-lg" aria-hidden="true"></i>
+                    Eliminar Visita
+                </a>
+            </td>
         </tr>
     }
 

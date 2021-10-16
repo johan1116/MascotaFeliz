@@ -2,10 +2,11 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using MascotaFeliz.App.Dominio;
-using MascotaFeliz.App.Persistencia.AppRepositorios;
 using Microsoft.AspNetCore.Mvc;
+using MascotaFeliz.App.Dominio;
+using MascotaFeliz.App.Persistencia;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+
 
 namespace MascotaFeliz.App.Presentacion.Pages
 {
@@ -15,10 +16,11 @@ namespace MascotaFeliz.App.Presentacion.Pages
 
         public PropietarioMascota PropietarioMascotas{get;set;}
 
-        public DetailsModel(IRepositorioPropietarios repositorioPropietarios)
+        public DetailsModel()
         {
-            this.repositorioPropietarios = repositorioPropietarios;
+            this.repositorioPropietarios = new RepositorioPropietarios (new MascotaFeliz.App.Persistencia.AppContext());
         }
+
         public IActionResult OnGet(int propietariomascotasId)
         {
             PropietarioMascotas = repositorioPropietarios.GetPropietariomascotaPorId(propietariomascotasId);

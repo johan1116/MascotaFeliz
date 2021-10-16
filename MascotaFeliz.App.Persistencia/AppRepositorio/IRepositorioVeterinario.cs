@@ -1,7 +1,9 @@
+using System;
 using System.Collections.Generic;
+using System.Linq;
 using MascotaFeliz.App.Dominio;
 
-namespace MascotaFeliz.App.Persistencia.AppRepositorios
+namespace MascotaFeliz.App.Persistencia
 {
     
 
@@ -9,11 +11,13 @@ namespace MascotaFeliz.App.Persistencia.AppRepositorios
     {
         IEnumerable<Veterinario> GetAll();
 
-        Veterinario GetVeterinarioPorId(int veterinarioID);
+        Veterinario GetVeterinarioPorId(int idVeterinario);
 
         Veterinario Update (Veterinario veterinarioActualizado);
 
         Veterinario Add (Veterinario nuevoVeterinario);
+
+        void DeleteVeterinario (int idVeterinario);
 
     }
 }

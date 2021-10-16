@@ -9,8 +9,8 @@
         <col style="background-color: rgba(14, 221, 248, 0.397);">
         <col style="background-color: rgba(120, 250, 178, 0.452);">
         <col style="background-color: rgba(14, 221, 248, 0.397);">
-        <col style="background-color: rgba(120, 250, 178, 0.452);">
-        @* <col style="background-color: rgba(14, 221, 248, 0.397);"> *@
+        @* <col style="background-color: rgba(120, 250, 178, 0.452);"> *@
+        
 
 
     </colgroup>
@@ -18,7 +18,7 @@
     <caption><b>Listado de Mascotas</b></caption>
     <thead>
         <tr>
-            <td>Id Mascota</td>
+            
             @* <td>Nombre</td> *@
             <td>Caracteristica</td>
             <td>Propietario</td>
@@ -29,9 +29,6 @@
     {
 
         <tr>
-            <td>
-                @Mascota.Id
-            </td>
             <td>
                 @Mascota.NombreMascota
             </td>
@@ -55,6 +52,12 @@
                 <a class="btn btn-primary table-btn" asp-page="./EditMascota" asp-route-mascotaId="@Mascota.Id">
                     <i class="fas  fa-address-book fa-lg" aria-hidden="true"></i>
                     Editar Mascota
+                </a>
+            </td>
+            <td>
+                <a class="btn btn-primary table-btn" asp-page="./DeleteMascota" asp-route-mascotaId="@Mascota.Id">
+                    <i class="fas  fa-address-book fa-lg" aria-hidden="true"></i>
+                    Eliminar Mascota
                 </a>
             </td>
         </tr>

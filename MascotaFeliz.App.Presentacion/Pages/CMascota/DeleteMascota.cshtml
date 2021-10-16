@@ -1,0 +1,25 @@
+﻿@page
+@model MascotaFeliz.App.Presentacion.Pages.DeleteMascotaModel
+@{
+}
+<h2>Eliminar Mascota:@Model.Mascota.NombreMascota</h2> 
+<form method="post">
+    <input type="hidden" asp-for="Mascota.Id" />
+    <div class="form-group">
+        <label asp-for="Mascota.NombreMascota"></label>
+        <input asp-for="Mascota.NombreMascota" class="for-control">
+        <span class="text-danger" asp-validation-for="Mascota.NombreMascota"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Mascota.Caracteristicas"></label>
+        <input asp-for="Mascota.Caracteristicas" class="for-control">
+        <span class="text-danger" asp-validation-for="Mascota.Caracteristicas"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Mascota.TipoMascota"></label>
+        <input asp-for="Mascota.TipoMascota" class="for-control">
+        <span class="text-danger" asp-validation-for="Mascota.TipoMascota"></span>
+    </div>
+    <button type="submit" class="btn btn-primary">Eliminar</button>
+</form>
+<a asp-page="./ListMascota" class="btn-default">Lista de Mascotas</a>

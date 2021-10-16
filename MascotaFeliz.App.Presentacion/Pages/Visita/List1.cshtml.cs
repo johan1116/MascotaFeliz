@@ -2,10 +2,11 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using MascotaFeliz.App.Dominio;
-using MascotaFeliz.App.Persistencia.AppRepositorios;
 using Microsoft.AspNetCore.Mvc;
+using MascotaFeliz.App.Dominio;
+using MascotaFeliz.App.Persistencia;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using Microsoft.AspNetCore.Authorization;
 
 namespace MascotaFeliz.App.Presentacion.Pages
 {
@@ -16,12 +17,12 @@ namespace MascotaFeliz.App.Presentacion.Pages
         [BindProperty]
         public IEnumerable<VisitaDomiciliaria> VisitaDomiciliaria { get; set; }
 
-        public List1Model(IRepositorioVisitas repositorioVisitas)
+        public List1Model()
         {
-            this.repositorioVisitas = repositorioVisitas;
+            this.repositorioVisitas = new RepositorioVisitas (new MascotaFeliz.App.Persistencia.AppContext());
         }
 
-        public void OnGet()
+        public void OnGet(string filtroBusqueda)
         {
             VisitaDomiciliaria = repositorioVisitas.GetAll();
 

@@ -94,9 +94,6 @@ namespace MascotaFeliz.App.Persistencia.Migrations
                     b.Property<DateTime>("FechaHora")
                         .HasColumnType("datetime2");
 
-                    b.Property<int?>("IdProfesionalId")
-                        .HasColumnType("int");
-
                     b.Property<int?>("MascotaId")
                         .HasColumnType("int");
 
@@ -113,8 +110,6 @@ namespace MascotaFeliz.App.Persistencia.Migrations
                         .HasColumnType("int");
 
                     b.HasKey("Id");
-
-                    b.HasIndex("IdProfesionalId");
 
                     b.HasIndex("MascotaId");
 
@@ -154,10 +149,6 @@ namespace MascotaFeliz.App.Persistencia.Migrations
 
             modelBuilder.Entity("MascotaFeliz.App.Dominio.VisitaDomiciliaria", b =>
                 {
-                    b.HasOne("MascotaFeliz.App.Dominio.Veterinario", "IdProfesional")
-                        .WithMany()
-                        .HasForeignKey("IdProfesionalId");
-
                     b.HasOne("MascotaFeliz.App.Dominio.Mascota", "Mascota")
                         .WithMany()
                         .HasForeignKey("MascotaId");
@@ -165,8 +156,6 @@ namespace MascotaFeliz.App.Persistencia.Migrations
                     b.HasOne("MascotaFeliz.App.Dominio.Veterinario", "Veterinario")
                         .WithMany()
                         .HasForeignKey("VeterinarioId");
-
-                    b.Navigation("IdProfesional");
 
                     b.Navigation("Mascota");
 

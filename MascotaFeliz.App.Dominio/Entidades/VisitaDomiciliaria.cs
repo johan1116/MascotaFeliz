@@ -7,7 +7,6 @@ namespace MascotaFeliz.App.Dominio
         public Veterinario Veterinario { get; set; }
         public Mascota Mascota { get; set; }
         public DateTime FechaHora { get; set; }
-        public Veterinario IdProfesional { get; set; }
         public float Temperatura { get; set; }
         public float Peso { get; set; }
         public float FRespiratoria { get; set; }

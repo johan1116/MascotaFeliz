@@ -9,13 +9,13 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 
 namespace MascotaFeliz.App.Presentacion.Pages
 {
-    public class EditMascotaModel : PageModel
+    public class DeleteMascotaModel : PageModel
     {
         private readonly IRepositorioMascotas repositorioMascota;
         [BindProperty]
         public  Mascota Mascota { get; set; }
 
-        public EditMascotaModel()
+        public DeleteMascotaModel()
         {
             this.repositorioMascota = new RepositorioMascota(new MascotaFeliz.App.Persistencia.AppContext());
         }
@@ -26,10 +26,7 @@ namespace MascotaFeliz.App.Presentacion.Pages
             {
                 Mascota = repositorioMascota.GetMascotaPorId(mascotaId.Value);
             }
-            else
-            {
-                Mascota = new Mascota();
-            }
+            
             if (Mascota == null)
             {
                 return RedirectToPage("./NotFound");
@@ -47,7 +44,7 @@ namespace MascotaFeliz.App.Presentacion.Pages
             }
             if (Mascota.Id>0)
             {
-                Mascota = repositorioMascota.Update(Mascota);
+                repositorioMascota.DeleteMascota(Mascota.Id);
             }
             else
             {
@@ -57,4 +54,3 @@ namespace MascotaFeliz.App.Presentacion.Pages
         }
     }
 }
-

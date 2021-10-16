@@ -1,7 +1,9 @@
+using System;
 using System.Collections.Generic;
+using System.Linq;
 using MascotaFeliz.App.Dominio;
 
-namespace MascotaFeliz.App.Persistencia.AppRepositorios
+namespace MascotaFeliz.App.Persistencia
 {
     
 
@@ -9,11 +11,13 @@ namespace MascotaFeliz.App.Persistencia.AppRepositorios
     {
         IEnumerable<PropietarioMascota> GetAll();
 
-        PropietarioMascota GetPropietariomascotaPorId(int propietariomascotasID);
+        PropietarioMascota GetPropietariomascotaPorId(int idPropietario);
 
         PropietarioMascota Update (PropietarioMascota propietarioActualizado);
 
         PropietarioMascota Add(PropietarioMascota nuevoPropietario);
+
+        void DeletePropietario(int idPropietario);
 
     }
 }

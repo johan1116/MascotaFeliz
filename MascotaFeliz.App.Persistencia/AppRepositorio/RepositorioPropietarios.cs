@@ -1,45 +1,29 @@
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using MascotaFeliz.App.Dominio;
 
-namespace MascotaFeliz.App.Persistencia.AppRepositorios
+namespace MascotaFeliz.App.Persistencia
 {
     public class RepositorioPropietarios : IRepositorioPropietarios
     {
-       static  public List<PropietarioMascota> propietariomascotas;
-        public RepositorioPropietarios()
-        {
-            propietariomascotas = new List<PropietarioMascota>()
-            {
-                new PropietarioMascota {Id = 1,Documento= 1001526481 ,Nombre = "Johan",Apellidos = "Zuluaga",Telefono = "3504024440",Direccion = "Calle 24 # 19-60"},
-                new PropietarioMascota {Id = 2,Documento= 1001526459,Nombre = "Shesman",Apellidos = "Murcia",Telefono = "3504024441",Direccion = "Cubarral"},
-                new PropietarioMascota {Id = 3,Documento= 1001526895,Nombre = "Paola",Apellidos = "Padilla",Telefono = "3504024442",Direccion = "Carrera 4 Chia"},
-                new PropietarioMascota {Id = 4,Documento= 1001526635,Nombre = "Yuliana",Apellidos = "Riveros",Telefono = "302457882",Direccion = "Carrera 1 Buenos Aires"},
-                new PropietarioMascota {Id = 5,Documento= 1001526784,Nombre = "Angelo",Apellidos = "López",Telefono = "3507894512",Direccion = "Carrera 17 -68 suba"}
+        public readonly AppContext _appContext;
 
-            };
+        public RepositorioPropietarios(AppContext appContext)
+        {
+            _appContext = appContext;
         }
 
-        public PropietarioMascota Add(PropietarioMascota nuevoPropietario)
+        PropietarioMascota IRepositorioPropietarios.Add(PropietarioMascota nuevoPropietario)
         {
-            nuevoPropietario.Id=propietariomascotas.Max(np => np.Id)+1;
-            propietariomascotas.Add(nuevoPropietario);
-            return nuevoPropietario;
+            var propietario = _appContext.PropietarioMascota.Add(nuevoPropietario);
+            _appContext.SaveChanges();
+            return propietario.Entity;
         }
 
-        public IEnumerable<PropietarioMascota> GetAll()
+        PropietarioMascota IRepositorioPropietarios.Update(PropietarioMascota propietarioActualizado)
         {
-            return propietariomascotas;
-        }
-
-        public PropietarioMascota GetPropietariomascotaPorId(int propietariomascotasID)
-        {
-            return propietariomascotas.SingleOrDefault(p => p.Id == propietariomascotasID);
-        }
-
-        public PropietarioMascota Update(PropietarioMascota propietarioActualizado)
-        {
-            var propietario = propietariomascotas.SingleOrDefault(pr => pr.Id == propietarioActualizado.Id);
+            var propietario = _appContext.PropietarioMascota.FirstOrDefault(pr => pr.Id == propietarioActualizado.Id);
             if (propietario != null)
             {
                 propietario.Documento = propietarioActualizado.Documento;
@@ -47,10 +31,35 @@ namespace MascotaFeliz.App.Persistencia.AppRepositorios
                 propietario.Apellidos = propietarioActualizado.Apellidos;
                 propietario.Telefono = propietarioActualizado.Telefono;
                 propietario.Direccion = propietarioActualizado.Direccion;
-                
+
+                _appContext.SaveChanges();
             }
             return propietario;
+
+        }
+
+        PropietarioMascota IRepositorioPropietarios.GetPropietariomascotaPorId(int idPropietario)
+        {
+            return _appContext.PropietarioMascota.FirstOrDefault(p => p.Id == idPropietario);
+        }
+
+        IEnumerable<PropietarioMascota> IRepositorioPropietarios.GetAll()
+        {
+            return _appContext.PropietarioMascota;
         }
         
+        void IRepositorioPropietarios.DeletePropietario(int idPropietario)
+        {
+            var propietarioEncontrado = _appContext.PropietarioMascota.FirstOrDefault(md => md.Id == idPropietario);
+            if(propietarioEncontrado == null)
+            {
+                return;
+            }
+            else
+            {
+                _appContext.PropietarioMascota.Remove(propietarioEncontrado);
+                _appContext.SaveChanges();
+            }
+        }
     }
 }

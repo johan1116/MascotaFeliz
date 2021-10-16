@@ -9,28 +9,25 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 
 namespace MascotaFeliz.App.Presentacion.Pages
 {
-    public class EditMascotaModel : PageModel
+    public class DeleteVeterinarioModel : PageModel
     {
-        private readonly IRepositorioMascotas repositorioMascota;
+        private readonly IRepositorioVeterinario repositorioVeterinario;
         [BindProperty]
-        public  Mascota Mascota { get; set; }
+        public Veterinario Veterinario { get; set; }
 
-        public EditMascotaModel()
+        public DeleteVeterinarioModel()
         {
-            this.repositorioMascota = new RepositorioMascota(new MascotaFeliz.App.Persistencia.AppContext());
+            this.repositorioVeterinario = new RepositorioVeterinario (new MascotaFeliz.App.Persistencia.AppContext()) ;
         }
 
-        public IActionResult OnGet(int? mascotaId)
+        public IActionResult OnGet(int? veterinarioId)
         {
-            if (mascotaId.HasValue)
+            if (veterinarioId.HasValue)
             {
-                Mascota = repositorioMascota.GetMascotaPorId(mascotaId.Value);
+                Veterinario = repositorioVeterinario.GetVeterinarioPorId(veterinarioId.Value);
             }
-            else
-            {
-                Mascota = new Mascota();
-            }
-            if (Mascota == null)
+           
+            if (Veterinario == null)
             {
                 return RedirectToPage("./NotFound");
             }
@@ -45,16 +42,15 @@ namespace MascotaFeliz.App.Presentacion.Pages
             {
                 return Page();
             }
-            if (Mascota.Id>0)
+            if (Veterinario.Id>0)
             {
-                Mascota = repositorioMascota.Update(Mascota);
+                repositorioVeterinario.DeleteVeterinario(Veterinario.Id);
             }
             else
             {
-                repositorioMascota.Add(Mascota);
+                repositorioVeterinario.Add(Veterinario);
             }
             return Page();
         }
     }
 }
-

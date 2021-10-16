@@ -2,9 +2,9 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using MascotaFeliz.App.Dominio;
-using MascotaFeliz.App.Persistencia.AppRepositorios;
 using Microsoft.AspNetCore.Mvc;
+using MascotaFeliz.App.Dominio;
+using MascotaFeliz.App.Persistencia;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
 namespace MascotaFeliz.App.Presentacion.Pages
@@ -15,9 +15,9 @@ namespace MascotaFeliz.App.Presentacion.Pages
         [BindProperty]
         public Veterinario Veterinario { get; set; }
 
-        public EditVeterinarioModel(IRepositorioVeterinario repositorioVeterinario)
+        public EditVeterinarioModel()
         {
-            this.repositorioVeterinario = repositorioVeterinario;
+            this.repositorioVeterinario = new RepositorioVeterinario (new MascotaFeliz.App.Persistencia.AppContext()) ;
         }
 
         public IActionResult OnGet(int? veterinarioId)
@@ -41,6 +41,10 @@ namespace MascotaFeliz.App.Presentacion.Pages
 
         public IActionResult OnPost()
         {
+            if (!ModelState.IsValid)
+            {
+                return Page();
+            }
             if (Veterinario.Id>0)
             {
                 Veterinario = repositorioVeterinario.Update(Veterinario);
@@ -53,3 +57,4 @@ namespace MascotaFeliz.App.Presentacion.Pages
         }
     }
 }
+

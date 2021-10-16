@@ -9,12 +9,12 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 
 namespace MascotaFeliz.App.Presentacion.Pages
 {
-    public class EditVisitaModel : PageModel
+    public class DeleteVisitaModel : PageModel
     {
         private readonly IRepositorioVisitas repositorioVisitas;
         [BindProperty]
         public VisitaDomiciliaria VisitaDomiciliaria { get; set; }
-        public EditVisitaModel()
+        public DeleteVisitaModel()
         {
             this.repositorioVisitas = new RepositorioVisitas (new MascotaFeliz.App.Persistencia.AppContext());
         }
@@ -23,10 +23,6 @@ namespace MascotaFeliz.App.Presentacion.Pages
             if (visitadomiciliariaId.HasValue)
             {
                 VisitaDomiciliaria = repositorioVisitas.GetVisitadomiciliariaPorId(visitadomiciliariaId.Value);
-            }
-            else
-            {
-                VisitaDomiciliaria = new VisitaDomiciliaria();
             }
             if (VisitaDomiciliaria == null)
             {
@@ -45,7 +41,7 @@ namespace MascotaFeliz.App.Presentacion.Pages
             }
             if (VisitaDomiciliaria.Id>0)
             {
-                VisitaDomiciliaria = repositorioVisitas.Update(VisitaDomiciliaria);
+                repositorioVisitas.DeleteVisita(VisitaDomiciliaria.Id);
             }
             else
             {
@@ -53,6 +49,5 @@ namespace MascotaFeliz.App.Presentacion.Pages
             }
             return Page();
         }
-
     }
 }

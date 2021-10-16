@@ -10,13 +10,13 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 
 namespace MascotaFeliz.App.Presentacion.Pages
 {
-    public class EditPropietarioModel : PageModel
+    public class DeletePropietarioModel : PageModel
     {
         private readonly IRepositorioPropietarios repositorioPropietarios;
         [BindProperty]
         public PropietarioMascota PropietarioMascotas{get;set;}
 
-        public EditPropietarioModel()
+        public DeletePropietarioModel()
         {
             this.repositorioPropietarios = new RepositorioPropietarios (new MascotaFeliz.App.Persistencia.AppContext());
         }
@@ -26,10 +26,6 @@ namespace MascotaFeliz.App.Presentacion.Pages
             if (propietariomascotasId.HasValue)
             {
                 PropietarioMascotas = repositorioPropietarios.GetPropietariomascotaPorId(propietariomascotasId.Value);
-            }
-            else
-            {
-                PropietarioMascotas = new PropietarioMascota();
             }
             if (PropietarioMascotas == null)
             {
@@ -48,7 +44,7 @@ namespace MascotaFeliz.App.Presentacion.Pages
             }
             if (PropietarioMascotas.Id>0)
             {
-                PropietarioMascotas = repositorioPropietarios.Update(PropietarioMascotas);
+                repositorioPropietarios.DeletePropietario(PropietarioMascotas.Id);
             }
             else
             {
@@ -56,7 +52,5 @@ namespace MascotaFeliz.App.Presentacion.Pages
             }
             return Page();
         }
-
-
     }
 }

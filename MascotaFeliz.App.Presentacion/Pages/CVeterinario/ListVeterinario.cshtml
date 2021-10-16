@@ -11,7 +11,7 @@
         <col style="background-color: rgba(14, 221, 248, 0.397);">
         <col style="background-color: rgba(120, 250, 178, 0.452);">
         <col style="background-color: rgba(14, 221, 248, 0.397);">
-        <col style="background-color: rgba(120, 250, 178, 0.452);">
+        
 
 
     </colgroup>
@@ -19,7 +19,7 @@
     <caption><b>Listado Veterinarios</b></caption>
     <thead>
         <tr>
-            <td>Id</td>
+            
             <td>Documento de Identidad</td>
             <td>Nombre</td>
             <td>Apellidos</td>
@@ -31,9 +31,6 @@
     {
 
         <tr>
-            <td>
-                @Veterinario.Id
-            </td>
             <td>
                 @Veterinario.Documento
             </td>
@@ -59,6 +56,12 @@
                 <a class="btn btn-primary table-btn" asp-page="./EditVeterinario" asp-route-veterinarioId="@Veterinario.Id">
                     <i class="fas  fa-address-book fa-lg" aria-hidden="true"></i>
                     Editar Veterinario
+                </a>
+            </td>
+            <td>
+                <a class="btn btn-primary table-btn" asp-page="./DeleteVeterinario" asp-route-veterinarioId="@Veterinario.Id">
+                    <i class="fas  fa-address-book fa-lg" aria-hidden="true"></i>
+                    Eliminar Veterinario
                 </a>
             </td>    
         </tr>
