@@ -2,34 +2,90 @@
 @model MascotaFeliz.App.Presentacion.Pages.EditVeterinarioModel
 @{
 }
-<h2>Editar Veterinario:@Model.Veterinario.Nombre</h2> 
-<form method="post">
-    <input type="hidden" asp-for="Veterinario.Id" />
-    <div class="form-group">
-        <label asp-for="Veterinario.Documento"></label>
-        <input asp-for="Veterinario.Documento" class="for-control">
-        <span class="text-danger" asp-validation-for="Veterinario.Documento"></span>
+<div class="framework">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Registro Veterinario</title>
+
+        <link rel="stylesheet" href="estilos.css">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="~/css/estilos.css" />
+    </head>
+    <div>
+        <div class="fondo">
+            <div class="Encabezado">
+                <img class="imagen1" src="~/imagen/pet4.png">
+                <h1 class="logo"> Mundo <span>Paticas</span> </h1>
+            </div>
+            <div class="contenido">
+                <form action="" method="POST" id="form">
+                    <input type="hidden" asp-for="Veterinario.Id" />
+                    <h1>Veterinario</h1>
+                    <div class="form">
+
+                        <div class="grupo">
+                            <input inputmode="numeric" id="name" asp-for="Veterinario.Documento" required>
+                            <span class="barra" asp-validation-for="Veterinario.Documento"></span>
+                            <label for="">Documento</label>
+                        </div>
+                        <div class="grupo">
+                            <input  id="name" asp-for="Veterinario.Nombre" required>
+                            <span class="barra" asp-validation-for="Veterinario.Nombre"></span>
+                            <label for="">Nombres</label>
+                        </div>
+                        <div class="grupo">
+                            <input  id="apellidos" asp-for="Veterinario.Apellidos" required>
+                            <span class="barra" asp-validation-for="Veterinario.Apellidos"></span>
+                            <label for="">Apellidos</label>
+                        </div>
+                        <div class="grupo">
+                            <input  id="telefono" asp-for="Veterinario.Telefono" required>
+                            <span class="barra" asp-validation-for="Veterinario.Telefono"></span>
+                            <label for="">Teléfono</label>
+                        </div>
+                        <div class="grupo">
+                            <input  id="tarjeta" asp-for="Veterinario.TarjetaProfesional" required>
+                            <span class="barra" asp-validation-for="Veterinario.TarjetaProfesional"></span>
+                            <label for="">Tarjeta Profesional</label>
+                        </div>
+                        
+                        <div class="bloque">
+                            <button type="submit">Registrarme</button></div>
+                            <a asp-page="./ListVeterinario" class="btn-default">Lista de Veterinarios</a>
+
+                    </div>
+                </form>
+                <div class="info">
+                    <h4><b>Mayor Información</b></h4>
+                    <ul>
+
+                        <li> <i class="material-icons">location_on</i> Avenida Esperanza N° 26-16 </li>
+                        <li> <i class="material-icons">call</i> 601 - 8641223 </li>
+                        <li> <i class="material-icons">mail</i> mundopaticas@gmail.com </li>
+                        <li><i class="material-icons">whatsapp</i> +57 3132256147 </li>
+                        <li><i class="material-icons">facebook</i> <a href="https://www.facebook.com">Mundo Paticas</a>
+                        </li>
+
+
+                    </ul>
+                    <p>
+                        Somos una empresa especializada <br> en el cuidado de tu mascota.<br>
+                        Ofrecemos una amplia gama de <br> servicios de alta calidad y<br>
+                        experiencia confortable para ti y tu peludito.<br>
+                    </p>
+                    <p class="Yotta">Elaborado por</p>
+                    <img class="imagen2" src="~/imagen/yota1.png">
+
+                </div>
+            </div>
+        </div>
+
+
+
     </div>
-    <div class="form-group">
-        <label asp-for="Veterinario.Nombre"></label>
-        <input asp-for="Veterinario.Nombre" class="for-control">
-        <span class="text-danger" asp-validation-for="Veterinario.Nombre"></span>
-    </div>
-    <div class="form-group">
-        <label asp-for="Veterinario.Apellidos"></label>
-        <input asp-for="Veterinario.Apellidos" class="for-control">
-        <span class="text-danger" asp-validation-for="Veterinario.Apellidos"></span>
-    </div>
-    <div class="form-group">
-        <label asp-for="Veterinario.Telefono"></label>
-        <input asp-for="Veterinario.Telefono" class="for-control">
-        <span class="text-danger" asp-validation-for="Veterinario.Telefono"></span>
-    </div>
-    <div class="form-group">
-        <label asp-for="Veterinario.TarjetaProfesional"></label>
-        <input asp-for="Veterinario.TarjetaProfesional" class="for-control">
-        <span class="text-danger" asp-validation-for="Veterinario.TarjetaProfesional"></span>
-    </div>
-    <button type="submit" class="btn btn-primary">Grabar</button>
-</form>
-<a asp-page="./ListVeterinario" class="btn-default">Lista de Veterinarios</a>
+</div>
+
+</html>

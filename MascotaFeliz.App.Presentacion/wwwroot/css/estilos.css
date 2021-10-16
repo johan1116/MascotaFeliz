@@ -232,6 +232,21 @@ button {
   cursor: pointer;
 }
 
+.button2 {
+  font-family: 'roboto';
+  
+
+  border: none;
+  display: block;
+  width: 80%;
+  margin: 30px auto;
+  color: #3ec007;
+  height: 30px;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 0rem 4rem;
+}
+
 .form button:hover,
 .form button:focus {
   background: #7ad653;
@@ -247,6 +262,7 @@ button {
   color: #fff;
   outline: 0;
 }
+
 
 .info {
   font-family: 'Roboto';
